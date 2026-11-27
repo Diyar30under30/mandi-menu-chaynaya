@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="kk" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mandi Center — мәзір</title>
+<meta name="description" content="Астанадағы Mandi Center мәзірі: 1, 2 және 5 адамға арналған манди, карак, лимонадтар мен десерттер. Араб (Йемен) халал асханасы.">
+<meta name="theme-color" content="#16181A">
+<link rel="alternate" hreflang="ru" href="/">
+<link rel="alternate" hreflang="kk" href="/kk/">
+<script>try{if(localStorage.getItem('mandi-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../src/tokens.css">
+<link rel="stylesheet" href="../src/components.css">
+<link rel="stylesheet" href="../src/menu.css">
+</head>
+<body>
+<a class="btn btn--primary skip" href="#menu">Мәзірге өту</a>
+<header class="masthead"><div class="container">
+<div class="topbar">
+<a class="wordmark" href="./">Mandi Center</a>
+<div class="topbar__tools">
+<nav class="lang" aria-label="Мәзір тілі"><a class="lang__btn" href="../" lang="ru" hreflang="ru" title="Русский">РУС</a><span class="lang__sep" aria-hidden="true"></span><a class="lang__btn" href="./" lang="kk" hreflang="kk" title="Қазақша" aria-current="true">ҚАЗ</a></nav>
+<button class="icon-btn" id="theme-btn" type="button" aria-label="Ашық тақырып"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+<button class="icon-btn" id="search-btn" type="button" aria-label="Мәзірден іздеу" aria-expanded="false" aria-controls="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+</div>
+</div>
+<div class="intro">
+<h1 class="intro__title">Астанадағы жалғыз Манди Центр</h1>
+<div class="intro__meta">
+<p class="intro__facts t-meta"><span>Араб (Йемен) асханасы</span><span>Халал асхана</span></p>
+<p class="status" id="status"><svg viewBox="0 0 8 8" aria-hidden="true"><circle cx="4" cy="4" r="4"/></svg><span>01:00-ге дейін ашық</span></p>
+</div>
+</div>
+</div></header>
+<nav class="nav" aria-label="Мәзір бөлімдері"><div class="container">
+<div class="search" id="search" role="search" hidden>
+<div class="field">
+<label class="sr-only" for="q">Мәзірден іздеу</label>
+<div class="search__row"><div class="field__control"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="q" type="search" placeholder="Тағам немесе сусын" autocomplete="off" enterkeyhint="search" aria-describedby="q-result"></div><button class="icon-btn" id="search-close" type="button" aria-label="Іздеуді жабу"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<p class="field__hint search__result" id="q-result" aria-live="polite"></p>
+</div>
+</div>
+<div class="tabs"><a class="tab" href="#cat-mandi" data-sec="kitchen" data-first="cat-mandi" aria-current="true">Тағамдар</a><a class="tab" href="#cat-karak" data-sec="drinks" data-first="cat-karak" aria-current="false">Сусындар</a><a class="tab" href="#cat-showcase" data-sec="desserts" data-first="cat-showcase" aria-current="false">Десерттер</a></div>
+<div class="chips" data-sec="kitchen" aria-label="Санаттар: Тағамдар"><a class="chip" href="#cat-mandi" data-cat="cat-mandi" aria-current="true">Манди</a><a class="chip" href="#cat-addons" data-cat="cat-addons" aria-current="false">Мандиге қосымша</a><a class="chip" href="#cat-hot" data-cat="cat-hot" aria-current="false">Ыстық тағамдар</a><a class="chip" href="#cat-starters" data-cat="cat-starters" aria-current="false">Сорпалар мен тіскебасарлар</a><a class="chip" href="#cat-salads" data-cat="cat-salads" aria-current="false">Салаттар</a><a class="chip" href="#cat-sides" data-cat="cat-sides" aria-current="false">Гарнирлер</a><a class="chip" href="#cat-pita" data-cat="cat-pita" aria-current="false">Пита және чапати</a><a class="chip" href="#cat-breakfast" data-cat="cat-breakfast" aria-current="false">Таңғы ас</a></div><div class="chips" data-sec="drinks" aria-label="Санаттар: Сусындар" hidden><a class="chip" href="#cat-karak" data-cat="cat-karak" aria-current="false">Карак</a><a class="chip" href="#cat-lemonades" data-cat="cat-lemonades" aria-current="false">Лимонадтар</a><a class="chip" href="#cat-author-tea" data-cat="cat-author-tea" aria-current="false">Авторлық шай</a><a class="chip" href="#cat-coffee" data-cat="cat-coffee" aria-current="false">Кофе</a><a class="chip" href="#cat-iced-coffee" data-cat="cat-iced-coffee" aria-current="false">Суық кофе</a><a class="chip" href="#cat-not-coffee" data-cat="cat-not-coffee" aria-current="false">Кофе емес</a><a class="chip" href="#cat-smoothies" data-cat="cat-smoothies" aria-current="false">Смузи</a><a class="chip" href="#cat-leaf-tea" data-cat="cat-leaf-tea" aria-current="false">Жапырақты шай</a><a class="chip" href="#cat-soda" data-cat="cat-soda" aria-current="false">Газды сусындар</a><a class="chip" href="#cat-tonic" data-cat="cat-tonic" aria-current="false">Тониктер</a></div><div class="chips" data-sec="desserts" aria-label="Санаттар: Десерттер" hidden><a class="chip" href="#cat-showcase" data-cat="cat-showcase" aria-current="false">Витринадағы десерттер</a></div>
+</div></nav>
+<main id="menu" tabindex="-1">
+<section class="sec" id="sec-kitchen" aria-labelledby="st-kitchen"><div class="container">
+<h2 class="t-display sec__title sr-only" id="st-kitchen">Тағамдар</h2>
+<section class="cat cat--mandi" id="cat-mandi" data-sec="kitchen" aria-labelledby="h-mandi">
+<div class="mandi">
+<div class="mandi__aside">
+<figure class="mandi__photo"><img src="../images/item-0-0-0.jpg" alt="Манди" width="820" height="748" fetchpriority="high" decoding="async"></figure>
+<div class="mandi__head"><h3 class="t-display" id="h-mandi">Манди</h3><p class="mandi__sub">1, 2 және 5 адамға</p></div>
+<p class="t-desc mandi__lead">Йемен тағамы: дәмдеуіштер қосылған хош иісті күріш және жұмсарғанша бұқтырылған ет</p>
+<div class="seg" role="group" aria-labelledby="seg-label"><span class="seg__label" id="seg-label">Неше адамға?</span><div class="seg__opts"><button class="seg__opt" type="button" data-n="1" aria-pressed="false">1</button><button class="seg__opt" type="button" data-n="2" aria-pressed="true">2</button><button class="seg__opt" type="button" data-n="5" aria-pressed="false">5</button></div></div>
+</div>
+<div class="dishes">
+<article class="dish" id="card-mandi-chicken" data-title="Тауық етімен манди" data-search="тауық етімен манди ет сөліне қаныққан, дәмдеуіштер қосылған хош иісті күріш үстінде жұмсарғанша бұқтырылған тауық еті 1 адамға 2 адамға 5 адамға манди с курицей">
+<div class="dish__head"><h4 class="dish__title">Тауық етімен манди</h4><span class="badge">Ұсынамыз</span></div>
+<div class="portions" role="group" aria-label="Тауық етімен манди"><button class="portion" type="button" aria-pressed="false" aria-label="1 адамға, 3 800 ₸" data-key="0-0-0" data-price="3800" data-n="1" data-label="1 адамға" data-photo="../images/item-0-0-0.jpg" data-w="820" data-h="748"><span class="portion__head" aria-hidden="true"><span class="portion__n">1</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">3 800 ₸</span></button><button class="portion" type="button" aria-pressed="true" aria-label="2 адамға, 7 500 ₸, бір адамға — 3 750 ₸" data-key="0-0-1" data-price="7500" data-n="2" data-label="2 адамға" data-photo="../images/item-0-0-1.jpg" data-w="140" data-h="140"><span class="portion__head" aria-hidden="true"><span class="portion__n">2</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">7 500 ₸</span><span class="portion__pp" aria-hidden="true">бір адамға — 3 750 ₸</span></button><button class="portion" type="button" aria-pressed="false" aria-label="5 адамға, 16 000 ₸, бір адамға — 3 200 ₸, −16 %" data-key="0-0-2" data-price="16000" data-n="5" data-label="5 адамға" data-photo="../images/item-0-0-2.jpg" data-w="140" data-h="140"><span class="portion__head" aria-hidden="true"><span class="portion__n">5</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">16 000 ₸</span><span class="portion__pp" aria-hidden="true">бір адамға — 3 200 ₸</span><span class="save" aria-hidden="true">−16 %</span></button></div>
+
+
+<p class="t-desc">Ет сөліне қаныққан, дәмдеуіштер қосылған хош иісті күріш үстінде жұмсарғанша бұқтырылған тауық еті <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-mandi-chicken">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-mandi-chicken" hidden><img src="../images/item-0-0-1.jpg" alt="Тауық етімен манди, 2 адамға" width="140" height="140" loading="lazy" decoding="async"></figure>
+<div class="line dish__sum"><span class="line__name t-meta"><span class="sum-label">2 адамға</span><span class="line__dots" aria-hidden="true"></span></span><span class="t-price-lg sum-price">7 500 ₸</span><button class="add" type="button" data-key="0-0-1" data-price="7500" data-cook="" aria-label="Тізімге: Тауық етімен манди, 2 адамға, 7 500 ₸" data-label="Тізімге: Тауық етімен манди, 2 адамға, 7 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+</article>
+<article class="dish" id="card-mandi-lamb" data-title="Қой етімен манди" data-search="қой етімен манди ет сөліне қаныққан, дәмдеуіштер қосылған хош иісті күріш үстінде жұмсарғанша бұқтырылған қой еті 1 адамға 2 адамға 5 адамға манди с бараниной">
+<div class="dish__head"><h4 class="dish__title">Қой етімен манди</h4><span class="badge">Ұсынамыз</span></div>
+<div class="portions" role="group" aria-label="Қой етімен манди"><button class="portion" type="button" aria-pressed="false" aria-label="1 адамға, 8 690 ₸" data-key="0-0-3" data-price="8690" data-n="1" data-label="1 адамға" data-photo="../images/item-0-0-3.jpg" data-w="820" data-h="1091"><span class="portion__head" aria-hidden="true"><span class="portion__n">1</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">8 690 ₸</span></button><button class="portion" type="button" aria-pressed="true" aria-label="2 адамға, 15 290 ₸, бір адамға — 7 645 ₸, −12 %" data-key="0-0-4" data-price="15290" data-n="2" data-label="2 адамға" data-photo="../images/item-0-0-4.jpg" data-w="140" data-h="140"><span class="portion__head" aria-hidden="true"><span class="portion__n">2</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">15 290 ₸</span><span class="portion__pp" aria-hidden="true">бір адамға — 7 645 ₸</span><span class="save" aria-hidden="true">−12 %</span></button><button class="portion" type="button" aria-pressed="false" aria-label="5 адамға, 26 290 ₸, бір адамға — 5 258 ₸, −39 %" data-key="0-0-5" data-price="26290" data-n="5" data-label="5 адамға" data-photo="../images/item-0-0-5.jpg" data-w="140" data-h="140"><span class="portion__head" aria-hidden="true"><span class="portion__n">5</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">26 290 ₸</span><span class="portion__pp" aria-hidden="true">бір адамға — 5 258 ₸</span><span class="save" aria-hidden="true">−39 %</span></button></div>
+
+
+<p class="t-desc">Ет сөліне қаныққан, дәмдеуіштер қосылған хош иісті күріш үстінде жұмсарғанша бұқтырылған қой еті <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-mandi-lamb">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-mandi-lamb" hidden><img src="../images/item-0-0-4.jpg" alt="Қой етімен манди, 2 адамға" width="140" height="140" loading="lazy" decoding="async"></figure>
+<div class="line dish__sum"><span class="line__name t-meta"><span class="sum-label">2 адамға</span><span class="line__dots" aria-hidden="true"></span></span><span class="t-price-lg sum-price">15 290 ₸</span><button class="add" type="button" data-key="0-0-4" data-price="15290" data-cook="" aria-label="Тізімге: Қой етімен манди, 2 адамға, 15 290 ₸" data-label="Тізімге: Қой етімен манди, 2 адамға, 15 290 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+</article>
+<article class="dish" id="card-mandi-assorti" data-title="Манди ассорти" data-search="манди ассорти ет сөліне қаныққан, дәмдеуіштер қосылған хош иісті күріш үстінде әртүрлі ет 2 адамға 5 адамға манди ассорти">
+<div class="dish__head"><h4 class="dish__title">Манди ассорти</h4></div>
+<div class="portions" role="group" aria-label="Манди ассорти"><span class="portion portion--none" aria-hidden="true"></span><button class="portion" type="button" aria-pressed="true" aria-label="2 адамға, 13 530 ₸, бір адамға — 6 765 ₸" data-key="0-0-6" data-price="13530" data-n="2" data-label="2 адамға" data-photo="../images/item-0-0-6.jpg" data-w="140" data-h="140"><span class="portion__head" aria-hidden="true"><span class="portion__n">2</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">13 530 ₸</span><span class="portion__pp" aria-hidden="true">бір адамға — 6 765 ₸</span></button><button class="portion" type="button" aria-pressed="false" aria-label="5 адамға, 21 990 ₸, бір адамға — 4 398 ₸, −35 %" data-key="0-0-7" data-price="21990" data-n="5" data-label="5 адамға" data-photo="../images/item-0-0-7.jpg" data-w="140" data-h="140"><span class="portion__head" aria-hidden="true"><span class="portion__n">5</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">21 990 ₸</span><span class="portion__pp" aria-hidden="true">бір адамға — 4 398 ₸</span><span class="save" aria-hidden="true">−35 %</span></button></div>
+<p class="dish__note t-meta" hidden>Тек 2 және 5 адамға дайындаймыз</p>
+
+<p class="t-desc">Ет сөліне қаныққан, дәмдеуіштер қосылған хош иісті күріш үстінде әртүрлі ет <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-mandi-assorti">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-mandi-assorti" hidden><img src="../images/item-0-0-6.jpg" alt="Манди ассорти, 2 адамға" width="140" height="140" loading="lazy" decoding="async"></figure>
+<div class="line dish__sum"><span class="line__name t-meta"><span class="sum-label">2 адамға</span><span class="line__dots" aria-hidden="true"></span></span><span class="t-price-lg sum-price">13 530 ₸</span><button class="add" type="button" data-key="0-0-6" data-price="13530" data-cook="" aria-label="Тізімге: Манди ассорти, 2 адамға, 13 530 ₸" data-label="Тізімге: Манди ассорти, 2 адамға, 13 530 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+</article>
+<article class="dish" id="card-mandi-bbq" data-title="Барбекю тауық етімен манди" data-search="барбекю тауық етімен манди ет сөліне қаныққан, дәмдеуіштер қосылған хош иісті күріш үстінде барбекю тауық еті 1 адамға 2 адамға 5 адамға манди с курицей барбекю">
+<div class="dish__head"><h4 class="dish__title">Барбекю тауық етімен манди</h4></div>
+<div class="portions" role="group" aria-label="Барбекю тауық етімен манди"><button class="portion" type="button" aria-pressed="false" aria-label="1 адамға, 4 000 ₸" data-key="0-0-10" data-price="4000" data-n="1" data-label="1 адамға" data-photo="../images/item-0-0-10.jpg" data-w="140" data-h="140"><span class="portion__head" aria-hidden="true"><span class="portion__n">1</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">4 000 ₸</span></button><button class="portion" type="button" aria-pressed="true" aria-label="2 адамға, 8 500 ₸, бір адамға — 4 250 ₸" data-key="0-0-11" data-price="8500" data-n="2" data-label="2 адамға" data-photo="../images/item-0-0-11.jpg" data-w="140" data-h="140"><span class="portion__head" aria-hidden="true"><span class="portion__n">2</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">8 500 ₸</span><span class="portion__pp" aria-hidden="true">бір адамға — 4 250 ₸</span></button><button class="portion" type="button" aria-pressed="false" aria-label="5 адамға, 17 000 ₸, бір адамға — 3 400 ₸, −15 %" data-key="0-0-12" data-price="17000" data-n="5" data-label="5 адамға" data-photo="../images/item-0-0-12.jpg" data-w="140" data-h="140"><span class="portion__head" aria-hidden="true"><span class="portion__n">5</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">17 000 ₸</span><span class="portion__pp" aria-hidden="true">бір адамға — 3 400 ₸</span><span class="save" aria-hidden="true">−15 %</span></button></div>
+
+
+<p class="t-desc">Ет сөліне қаныққан, дәмдеуіштер қосылған хош иісті күріш үстінде барбекю тауық еті <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-mandi-bbq">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-mandi-bbq" hidden><img src="../images/item-0-0-11.jpg" alt="Барбекю тауық етімен манди, 2 адамға" width="140" height="140" loading="lazy" decoding="async"></figure>
+<div class="line dish__sum"><span class="line__name t-meta"><span class="sum-label">2 адамға</span><span class="line__dots" aria-hidden="true"></span></span><span class="t-price-lg sum-price">8 500 ₸</span><button class="add" type="button" data-key="0-0-11" data-price="8500" data-cook="" aria-label="Тізімге: Барбекю тауық етімен манди, 2 адамға, 8 500 ₸" data-label="Тізімге: Барбекю тауық етімен манди, 2 адамға, 8 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+</article>
+<article class="dish" id="card-mandi-sudak" data-title="Көксеркемен манди" data-search="көксеркемен манди дәмдеуіштер қосылған хош иісті күріш үстінде барбекю немесе қуырылған көксерке 1 порция 2 адамға манди с судаком" data-cook="барбекю">
+<div class="dish__head"><h4 class="dish__title">Көксеркемен манди</h4></div>
+<div class="portions" role="group" aria-label="Көксеркемен манди"><button class="portion" type="button" aria-pressed="false" aria-label="1 порция, 4 000 ₸" data-key="0-0-8" data-price="4000" data-n="1" data-label="1 порция" data-photo="../images/item-0-0-8.jpg" data-w="140" data-h="140"><span class="portion__head" aria-hidden="true"><span class="portion__n">1</span><span class="portion__unit">порция</span></span><span class="portion__price" aria-hidden="true">4 000 ₸</span></button><button class="portion" type="button" aria-pressed="true" aria-label="2 адамға, 8 500 ₸, бір адамға — 4 250 ₸" data-key="0-0-9" data-price="8500" data-n="2" data-label="2 адамға" data-photo="../images/item-0-0-9.jpg" data-w="140" data-h="140"><span class="portion__head" aria-hidden="true"><span class="portion__n">2</span><span class="portion__unit">адамға</span></span><span class="portion__price" aria-hidden="true">8 500 ₸</span><span class="portion__pp" aria-hidden="true">бір адамға — 4 250 ₸</span></button><span class="portion portion--none" aria-hidden="true"></span></div>
+<p class="dish__note t-meta" hidden>1 порция және 2 адамға дайындаймыз</p>
+<div class="opts cook" role="group" aria-label="Дайындау тәсілі"><span class="t-meta">Дайындау тәсілі</span><button class="opt" type="button" data-cook="барбекю" aria-pressed="true">барбекю</button><button class="opt" type="button" data-cook="фрай" aria-pressed="false">қуырылған</button></div>
+<p class="t-desc">Дәмдеуіштер қосылған хош иісті күріш үстінде барбекю немесе қуырылған көксерке <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-mandi-sudak">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-mandi-sudak" hidden><img src="../images/item-0-0-9.jpg" alt="Көксеркемен манди, 2 адамға" width="140" height="140" loading="lazy" decoding="async"></figure>
+<div class="line dish__sum"><span class="line__name t-meta"><span class="sum-label">2 адамға, барбекю</span><span class="line__dots" aria-hidden="true"></span></span><span class="t-price-lg sum-price">8 500 ₸</span><button class="add" type="button" data-key="0-0-9" data-price="8500" data-cook="барбекю" aria-label="Тізімге: Көксеркемен манди, 2 адамға, барбекю, 8 500 ₸" data-label="Тізімге: Көксеркемен манди, 2 адамға, барбекю, 8 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+</article>
+<aside class="panel pairing" aria-labelledby="h-pairing"><h4 class="t-h2" id="h-pairing">Мандимен бірге алады</h4><p class="t-meta pairing__sub">Топқа сусын мен тәтті</p>
+<div class="items"><div class="line"><span class="line__name t-dish">Фирмалық карак шай <span class="ilabel t-meta">топқа</span><span class="line__dots" aria-hidden="true"></span></span><span class="t-price">3 800 ₸</span><button class="add" type="button" data-key="2-0-0" data-price="3800" aria-label="Тізімге: Фирмалық карак шай, топқа, 3 800 ₸" data-label="Тізімге: Фирмалық карак шай, топқа, 3 800 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div><div class="line"><span class="line__name t-dish">Құлпынайлы лимонад <span class="ilabel t-meta">1 л</span><span class="line__dots" aria-hidden="true"></span></span><span class="t-price">2 790 ₸</span><button class="add" type="button" data-key="1-4-0" data-price="2790" aria-label="Тізімге: Құлпынайлы лимонад, 1 л, 2 790 ₸" data-label="Тізімге: Құлпынайлы лимонад, 1 л, 2 790 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div><div class="line"><span class="line__name t-dish">Үй лимонады <span class="ilabel t-meta">1 л</span><span class="line__dots" aria-hidden="true"></span></span><span class="t-price">2 400 ₸</span><button class="add" type="button" data-key="1-3-11" data-price="2400" aria-label="Тізімге: Үй лимонады, 1 л, 2 400 ₸" data-label="Тізімге: Үй лимонады, 1 л, 2 400 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div><div class="line"><span class="line__name t-dish">Шайға арналған жаңғақ пен кептірілген жеміс ассортиі<span class="line__dots" aria-hidden="true"></span></span><span class="t-price">3 000 ₸</span><button class="add" type="button" data-key="3-0-8" data-price="3000" aria-label="Тізімге: Шайға арналған жаңғақ пен кептірілген жеміс ассортиі, 3 000 ₸" data-label="Тізімге: Шайға арналған жаңғақ пен кептірілген жеміс ассортиі, 3 000 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div></div></aside>
+<details class="story"><summary>Манди деген не<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p class="t-desc">Манди — Йеменнің дәстүрлі тағамы: хош иісті күріш, дәмдеуіштер және жұмсарғанша бұқтырылған ет (көбіне тауық немесе қой еті). Күріш ет сөлін бойына сіңіреді, тағам үлкен табақта соустармен бірге беріледі.</p></details>
+</div>
+</div>
+</section>
+<div class="cats"><section class="cat" id="cat-addons" data-sec="kitchen" aria-labelledby="h-addons">
+<header class="cat__head"><h3 class="t-h1" id="h-addons">Мандиге қосымшалар</h3><p class="t-desc cat__lead">Мандиге қосымша: соустар, нан және ет.</p></header>
+<div class="items"><article class="item" id="card-i-0-8-0" data-title="Ақ соус" data-search="ақ соус   белый соус">
+<div class="line"><h4 class="line__name t-dish">Ақ соус<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">300 ₸</span><button class="add" type="button" data-key="0-8-0" data-price="300" aria-label="Тізімге: Ақ соус, 300 ₸" data-label="Тізімге: Ақ соус, 300 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-0-8-1" data-title="Қызыл соус" data-search="қызыл соус   красный соус">
+<div class="line"><h4 class="line__name t-dish">Қызыл соус<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">300 ₸</span><button class="add" type="button" data-key="0-8-1" data-price="300" aria-label="Тізімге: Қызыл соус, 300 ₸" data-label="Тізімге: Қызыл соус, 300 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-0-8-7" data-title="Пита наны" data-search="пита наны   лепешка пита">
+<div class="line"><h4 class="line__name t-dish">Пита наны<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">490 ₸</span><button class="add" type="button" data-key="0-8-7" data-price="490" aria-label="Тізімге: Пита наны, 490 ₸" data-label="Тізімге: Пита наны, 490 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-0-8-4" data-title="Тауық еті" data-search="тауық еті   курица">
+<div class="line"><h4 class="line__name t-dish">Тауық еті<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 650 ₸</span><button class="add" type="button" data-key="0-8-4" data-price="1650" aria-label="Тізімге: Тауық еті, 1 650 ₸" data-label="Тізімге: Тауық еті, 1 650 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-0-8-5" data-title="Барбекю тауық еті" data-search="барбекю тауық еті   курица барбекю">
+<div class="line"><h4 class="line__name t-dish">Барбекю тауық еті<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 175 ₸</span><button class="add" type="button" data-key="0-8-5" data-price="2175" aria-label="Тізімге: Барбекю тауық еті, 2 175 ₸" data-label="Тізімге: Барбекю тауық еті, 2 175 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-0-8-2" data-title="Барбекю көксерке" data-search="барбекю көксерке   судак барбекю">
+<div class="line"><h4 class="line__name t-dish">Барбекю көксерке<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 175 ₸</span><button class="add" type="button" data-key="0-8-2" data-price="2175" aria-label="Тізімге: Барбекю көксерке, 2 175 ₸" data-label="Тізімге: Барбекю көксерке, 2 175 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-0-8-3" data-title="Қуырылған көксерке" data-search="қуырылған көксерке   судак фрай">
+<div class="line"><h4 class="line__name t-dish">Қуырылған көксерке<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 175 ₸</span><button class="add" type="button" data-key="0-8-3" data-price="2175" aria-label="Тізімге: Қуырылған көксерке, 2 175 ₸" data-label="Тізімге: Қуырылған көксерке, 2 175 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-0-8-6" data-title="Қой еті" data-search="қой еті   баранина">
+<div class="line"><h4 class="line__name t-dish">Қой еті<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">5 900 ₸</span><button class="add" type="button" data-key="0-8-6" data-price="5900" aria-label="Тізімге: Қой еті, 5 900 ₸" data-label="Тізімге: Қой еті, 5 900 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article></div>
+</section>
+<section class="cat" id="cat-hot" data-sec="kitchen" aria-labelledby="h-hot">
+<header class="cat__head"><h3 class="t-h1" id="h-hot">Ыстық тағамдар</h3></header>
+<div class="items"><article class="item" id="card-i-0-1-0" data-title="Тауық етімен чапати тәрелкеде" data-search="тауық етімен чапати тәрелкеде карри тауық еті дәмдеуішті күріш, хумус, көкөніс салаты және араб пита нанымен  чапати с курицей в тарелке">
+<div class="line"><h4 class="line__name t-dish">Тауық етімен чапати тәрелкеде<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">3 200 ₸</span><button class="add" type="button" data-key="0-1-0" data-price="3200" aria-label="Тізімге: Тауық етімен чапати тәрелкеде, 3 200 ₸" data-label="Тізімге: Тауық етімен чапати тәрелкеде, 3 200 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Карри тауық еті дәмдеуішті күріш, хумус, көкөніс салаты және араб пита нанымен <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-1-0">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-1-0" hidden><img src="../images/item-0-1-0.jpg" alt="Тауық етімен чапати тәрелкеде" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-6-0" data-title="Баттер чикен масала" data-search="баттер чикен масала дәмдеуіштер қосылған кілегейлі-қызанақ соусындағы тауық филесі, күрішпен береміз  баттер чикен масала">
+<div class="line"><h4 class="line__name t-dish">Баттер чикен масала<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">3 600 ₸</span><button class="add" type="button" data-key="0-6-0" data-price="3600" aria-label="Тізімге: Баттер чикен масала, 3 600 ₸" data-label="Тізімге: Баттер чикен масала, 3 600 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Дәмдеуіштер қосылған кілегейлі-қызанақ соусындағы тауық филесі, күрішпен береміз <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-6-0">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-6-0" hidden><img src="../images/item-0-6-0.jpg" alt="Баттер чикен масала" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-1-1" data-title="Кілегейлі соустағы саңырауқұлақты тауық еті және пюре" data-search="кілегейлі соустағы саңырауқұлақты тауық еті және пюре шампиньонмен бірге қуырылған тауық филесі, кілегейлі соуста. пюремен береміз  курица с грибами под сливочным соусом и пюре">
+<div class="line"><h4 class="line__name t-dish">Кілегейлі соустағы саңырауқұлақты тауық еті және пюре<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 800 ₸</span><button class="add" type="button" data-key="0-1-1" data-price="2800" aria-label="Тізімге: Кілегейлі соустағы саңырауқұлақты тауық еті және пюре, 2 800 ₸" data-label="Тізімге: Кілегейлі соустағы саңырауқұлақты тауық еті және пюре, 2 800 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Шампиньонмен бірге қуырылған тауық филесі, кілегейлі соуста. Пюремен береміз <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-1-1">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-1-1" hidden><img src="../images/item-0-1-1.jpg" alt="Кілегейлі соустағы саңырауқұлақты тауық еті және пюре" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-1-2" data-title="Тауық еті мен саңырауқұлақ қосылған паста" data-search="тауық еті мен саңырауқұлақ қосылған паста тауық еті мен қуырылған саңырауқұлақ қосылған кілегейлі соустағы тальятелли немесе лингвини  паста с курицей и грибами">
+<div class="line"><h4 class="line__name t-dish">Тауық еті мен саңырауқұлақ қосылған паста<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 900 ₸</span><button class="add" type="button" data-key="0-1-2" data-price="2900" aria-label="Тізімге: Тауық еті мен саңырауқұлақ қосылған паста, 2 900 ₸" data-label="Тізімге: Тауық еті мен саңырауқұлақ қосылған паста, 2 900 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Тауық еті мен қуырылған саңырауқұлақ қосылған кілегейлі соустағы тальятелли немесе лингвини <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-1-2">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-1-2" hidden><img src="../images/item-0-1-2.jpg" alt="Тауық еті мен саңырауқұлақ қосылған паста" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article></div>
+</section>
+<section class="cat" id="cat-starters" data-sec="kitchen" aria-labelledby="h-starters">
+<header class="cat__head"><h3 class="t-h1" id="h-starters">Сорпалар мен тіскебасарлар</h3></header>
+<div class="items"><article class="item" id="card-i-0-1-3" data-title="Питамен хумус" data-search="питамен хумус күнжіт пастасы мен зәйтүн майы қосылған ноқат пюресі, пита нанымен береміз  хумус с питой">
+<div class="line"><h4 class="line__name t-dish">Питамен хумус<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 900 ₸</span><button class="add" type="button" data-key="0-1-3" data-price="1900" aria-label="Тізімге: Питамен хумус, 1 900 ₸" data-label="Тізімге: Питамен хумус, 1 900 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Күнжіт пастасы мен зәйтүн майы қосылған ноқат пюресі, пита нанымен береміз <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-1-3">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo photo--lg" id="ph-i-0-1-3" hidden><img src="../images/item-0-1-3.jpg" alt="Питамен хумус" width="820" height="1075" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-4-0" data-title="Адас (жасымық сорпасы)" data-search="адас (жасымық сорпасы) қызыл жасымықтан жасалған, дәмі қанық крем-сорпа  адас (чечевичный суп)">
+<div class="line"><h4 class="line__name t-dish">Адас (жасымық сорпасы)<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 600 ₸</span><button class="add" type="button" data-key="0-4-0" data-price="1600" aria-label="Тізімге: Адас (жасымық сорпасы), 1 600 ₸" data-label="Тізімге: Адас (жасымық сорпасы), 1 600 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Қызыл жасымықтан жасалған, дәмі қанық крем-сорпа <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-4-0">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-4-0" hidden><img src="../images/item-0-4-0.jpg" alt="Адас (жасымық сорпасы)" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article></div>
+</section>
+<section class="cat" id="cat-salads" data-sec="kitchen" aria-labelledby="h-salads">
+<header class="cat__head"><h3 class="t-h1" id="h-salads">Салаттар</h3></header>
+<div class="items"><article class="item" id="card-i-0-5-0" data-title="Фатуш" data-search="фатуш бал-қыша тұздығы қосылған балғын көкөністер  фатуш">
+<div class="line"><h4 class="line__name t-dish">Фатуш<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 900 ₸</span><button class="add" type="button" data-key="0-5-0" data-price="1900" aria-label="Тізімге: Фатуш, 1 900 ₸" data-label="Тізімге: Фатуш, 1 900 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Бал-қыша тұздығы қосылған балғын көкөністер <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-5-0">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-5-0" hidden><img src="../images/item-0-5-0.jpg" alt="Фатуш" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-5-2" data-title="Балғын тілімдер" data-search="балғын тілімдер қызанақ, қияр, шалғам, бұрыш және көк шөп — кинза, аскөк, ақжелкен. хумуспен  свежая нарезка">
+<div class="line"><h4 class="line__name t-dish">Балғын тілімдер<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 400 ₸</span><button class="add" type="button" data-key="0-5-2" data-price="2400" aria-label="Тізімге: Балғын тілімдер, 2 400 ₸" data-label="Тізімге: Балғын тілімдер, 2 400 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Қызанақ, қияр, шалғам, бұрыш және көк шөп — кинза, аскөк, ақжелкен. Хумуспен <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-5-2">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-5-2" hidden><img src="../images/item-0-5-2.jpg" alt="Балғын тілімдер" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-5-1" data-title="Асқабақ пен қызылша салаты" data-search="асқабақ пен қызылша салаты фета кремі мен бал-қыша соусы қосылған асқабақ пен қызылша  салат с тыквой и свеклой">
+<div class="line"><h4 class="line__name t-dish">Асқабақ пен қызылша салаты<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 400 ₸</span><button class="add" type="button" data-key="0-5-1" data-price="2400" aria-label="Тізімге: Асқабақ пен қызылша салаты, 2 400 ₸" data-label="Тізімге: Асқабақ пен қызылша салаты, 2 400 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Фета кремі мен бал-қыша соусы қосылған асқабақ пен қызылша <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-5-1">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-5-1" hidden><img src="../images/item-0-5-1.jpg" alt="Асқабақ пен қызылша салаты" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-5-3" data-title="Тауық еті мен саңырауқұлақ салаты" data-search="тауық еті мен саңырауқұлақ салаты айоли соусы мен карамельденген шампиньон қосылған айсберг, тауық филесі және жұмыртқа  салат с курицей и грибами">
+<div class="line"><h4 class="line__name t-dish">Тауық еті мен саңырауқұлақ салаты<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 700 ₸</span><button class="add" type="button" data-key="0-5-3" data-price="2700" aria-label="Тізімге: Тауық еті мен саңырауқұлақ салаты, 2 700 ₸" data-label="Тізімге: Тауық еті мен саңырауқұлақ салаты, 2 700 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Айоли соусы мен карамельденген шампиньон қосылған айсберг, тауық филесі және жұмыртқа <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-5-3">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-5-3" hidden><img src="../images/item-0-5-3.jpg" alt="Тауық еті мен саңырауқұлақ салаты" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-5-4" data-title="Глазурьленген баклажан мен фета салаты" data-search="глазурьленген баклажан мен фета салаты қуырылған баклажан, фета, балғын көкөністер және хош иісті тұздық  салат с глазированным баклажаном и фетой">
+<div class="line"><h4 class="line__name t-dish">Глазурьленген баклажан мен фета салаты<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">3 100 ₸</span><button class="add" type="button" data-key="0-5-4" data-price="3100" aria-label="Тізімге: Глазурьленген баклажан мен фета салаты, 3 100 ₸" data-label="Тізімге: Глазурьленген баклажан мен фета салаты, 3 100 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Қуырылған баклажан, фета, балғын көкөністер және хош иісті тұздық <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-5-4">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-5-4" hidden><img src="../images/item-0-5-4.jpg" alt="Глазурьленген баклажан мен фета салаты" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article></div>
+</section>
+<section class="cat" id="cat-sides" data-sec="kitchen" aria-labelledby="h-sides">
+<header class="cat__head"><h3 class="t-h1" id="h-sides">Гарнирлер</h3></header>
+<div class="items"><article class="item" id="card-i-0-7-0" data-title="Дәмдеуішті күріш" data-search="дәмдеуішті күріш   рис пряный">
+<div class="line"><h4 class="line__name t-dish">Дәмдеуішті күріш<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">800 ₸</span><button class="add" type="button" data-key="0-7-0" data-price="800" aria-label="Тізімге: Дәмдеуішті күріш, 800 ₸" data-label="Тізімге: Дәмдеуішті күріш, 800 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-0-7-1" data-title="Фри картобы" data-search="фри картобы   картофель фри">
+<div class="line"><h4 class="line__name t-dish">Фри картобы<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">950 ₸</span><button class="add" type="button" data-key="0-7-1" data-price="950" aria-label="Тізімге: Фри картобы, 950 ₸" data-label="Тізімге: Фри картобы, 950 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-0-7-2" data-title="Айдахо картобы" data-search="айдахо картобы   картофель айдахо">
+<div class="line"><h4 class="line__name t-dish">Айдахо картобы<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">890 ₸</span><button class="add" type="button" data-key="0-7-2" data-price="890" aria-label="Тізімге: Айдахо картобы, 890 ₸" data-label="Тізімге: Айдахо картобы, 890 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-0-7-3" data-title="Картоп пюресі" data-search="картоп пюресі   картофельное пюре">
+<div class="line"><h4 class="line__name t-dish">Картоп пюресі<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">600 ₸</span><button class="add" type="button" data-key="0-7-3" data-price="600" aria-label="Тізімге: Картоп пюресі, 600 ₸" data-label="Тізімге: Картоп пюресі, 600 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article></div>
+</section>
+<section class="cat" id="cat-pita" data-sec="kitchen" aria-labelledby="h-pita">
+<header class="cat__head"><h3 class="t-h1" id="h-pita">Пита және чапати</h3></header>
+<div class="items"><article class="item" id="card-i-0-2-0" data-title="Тауық филесі мен «айоли» соусы қосылған пита" data-search="тауық филесі мен «айоли» соусы қосылған пита балғын көкөністер мен тартар соусы қосылған, пеште пісірілген тауық филесі  пита с куриным филе и соусом «айоли»">
+<div class="line"><h4 class="line__name t-dish">Тауық филесі мен «айоли» соусы қосылған пита<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 500 ₸</span><button class="add" type="button" data-key="0-2-0" data-price="2500" aria-label="Тізімге: Тауық филесі мен «айоли» соусы қосылған пита, 2 500 ₸" data-label="Тізімге: Тауық филесі мен «айоли» соусы қосылған пита, 2 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Балғын көкөністер мен тартар соусы қосылған, пеште пісірілген тауық филесі <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-2-0">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-2-0" hidden><img src="../images/item-0-2-0.jpg" alt="Тауық филесі мен «айоли» соусы қосылған пита" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-2-2" data-title="Жұлынған ет қосылған пита" data-search="жұлынған ет қосылған пита барбекю соусындағы бұқтырылған сиыр еті, қызанақ, қияр және салат жапырақтары  пита с рваным мясом">
+<div class="line"><h4 class="line__name t-dish">Жұлынған ет қосылған пита<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">3 190 ₸</span><button class="add" type="button" data-key="0-2-2" data-price="3190" aria-label="Тізімге: Жұлынған ет қосылған пита, 3 190 ₸" data-label="Тізімге: Жұлынған ет қосылған пита, 3 190 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Барбекю соусындағы бұқтырылған сиыр еті, қызанақ, қияр және салат жапырақтары <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-2-2">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-2-2" hidden><img src="../images/item-0-2-2.jpg" alt="Жұлынған ет қосылған пита" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-2-1" data-title="Тауық етімен чапати" data-search="тауық етімен чапати ішіне карри тауық еті салынған қатпарлы нан  чапати с курицей">
+<div class="line"><h4 class="line__name t-dish">Тауық етімен чапати<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 800 ₸</span><button class="add" type="button" data-key="0-2-1" data-price="1800" aria-label="Тізімге: Тауық етімен чапати, 1 800 ₸" data-label="Тізімге: Тауық етімен чапати, 1 800 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Ішіне карри тауық еті салынған қатпарлы нан <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-2-1">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-2-1" hidden><img src="../images/item-0-2-1.jpg" alt="Тауық етімен чапати" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-2-3" data-title="Жұмыртқамен чапати" data-search="жұмыртқамен чапати жұмыртқа, қияр, қызанақ және салат жапырақтары салынған қатпарлы нан  чапати с яйцом">
+<div class="line"><h4 class="line__name t-dish">Жұмыртқамен чапати<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 500 ₸</span><button class="add" type="button" data-key="0-2-3" data-price="1500" aria-label="Тізімге: Жұмыртқамен чапати, 1 500 ₸" data-label="Тізімге: Жұмыртқамен чапати, 1 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Жұмыртқа, қияр, қызанақ және салат жапырақтары салынған қатпарлы нан <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-2-3">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-2-3" hidden><img src="../images/item-0-2-3.jpg" alt="Жұмыртқамен чапати" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-2-4" data-title="Кутаб" data-search="кутаб ішіне көк шөп қосылған ірімшік салынған қатпарлы қамыр  кутабы">
+<div class="line"><h4 class="line__name t-dish">Кутаб<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 500 ₸</span><button class="add" type="button" data-key="0-2-4" data-price="1500" aria-label="Тізімге: Кутаб, 1 500 ₸" data-label="Тізімге: Кутаб, 1 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Ішіне көк шөп қосылған ірімшік салынған қатпарлы қамыр <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-2-4">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-2-4" hidden><img src="../images/item-0-2-4.jpg" alt="Кутаб" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article></div>
+</section>
+<section class="cat" id="cat-breakfast" data-sec="kitchen" aria-labelledby="h-breakfast">
+<header class="cat__head"><h3 class="t-h1" id="h-breakfast">Таңғы ас</h3></header>
+<div class="items"><article class="item" id="card-i-0-3-4" data-title="Ауылша таңғы ас" data-search="ауылша таңғы ас табиғи шұжықтар, жұмыртқа-глазунья, крем-чиз, тост наны және корнишондар  деревенский завтрак">
+<div class="line"><h4 class="line__name t-dish">Ауылша таңғы ас<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">3 500 ₸</span><button class="add" type="button" data-key="0-3-4" data-price="3500" aria-label="Тізімге: Ауылша таңғы ас, 3 500 ₸" data-label="Тізімге: Ауылша таңғы ас, 3 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Табиғи шұжықтар, жұмыртқа-глазунья, крем-чиз, тост наны және корнишондар <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-3-4">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-3-4" hidden><img src="../images/item-0-3-4.jpg" alt="Ауылша таңғы ас" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-3-2" data-title="Хашбраунмен скрэмбл" data-search="хашбраунмен скрэмбл   скрэмбл с хашбрауном">
+<div class="line"><h4 class="line__name t-dish">Хашбраунмен скрэмбл<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">3 500 ₸</span><button class="add" type="button" data-key="0-3-2" data-price="3500" aria-label="Тізімге: Хашбраунмен скрэмбл, 3 500 ₸" data-label="Тізімге: Хашбраунмен скрэмбл, 3 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="item__more"><button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-3-2">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-3-2" hidden><img src="../images/item-0-3-2.jpg" alt="Хашбраунмен скрэмбл" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-3-5" data-title="Тауық етімен сэндвич" data-search="тауық етімен сэндвич бриошь тоқашында: панировкаланған қытырлақ тауық филесі, қайнатылған жұмыртқа және корнишондар  сэндвич с курицей">
+<div class="line"><h4 class="line__name t-dish">Тауық етімен сэндвич<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 500 ₸</span><button class="add" type="button" data-key="0-3-5" data-price="2500" aria-label="Тізімге: Тауық етімен сэндвич, 2 500 ₸" data-label="Тізімге: Тауық етімен сэндвич, 2 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Бриошь тоқашында: панировкаланған қытырлақ тауық филесі, қайнатылған жұмыртқа және корнишондар <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-3-5">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-3-5" hidden><img src="../images/item-0-3-5.jpg" alt="Тауық етімен сэндвич" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-3-0" data-title="Тальбина ботқасы" data-search="тальбина ботқасы құрма және грек жаңғағы қосылған арпа ботқасы  каша тальбина">
+<div class="line"><h4 class="line__name t-dish">Тальбина ботқасы<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 500 ₸</span><button class="add" type="button" data-key="0-3-0" data-price="1500" aria-label="Тізімге: Тальбина ботқасы, 1 500 ₸" data-label="Тізімге: Тальбина ботқасы, 1 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Құрма және грек жаңғағы қосылған арпа ботқасы <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-3-0">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-3-0" hidden><img src="../images/item-0-3-0.jpg" alt="Тальбина ботқасы" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-3-1" data-title="Пеште пісірілген асқабақ қосылған күріш ботқасы" data-search="пеште пісірілген асқабақ қосылған күріш ботқасы   каша рисовая с запеченной тыквой">
+<div class="line"><h4 class="line__name t-dish">Пеште пісірілген асқабақ қосылған күріш ботқасы<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 500 ₸</span><button class="add" type="button" data-key="0-3-1" data-price="1500" aria-label="Тізімге: Пеште пісірілген асқабақ қосылған күріш ботқасы, 1 500 ₸" data-label="Тізімге: Пеште пісірілген асқабақ қосылған күріш ботқасы, 1 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="item__more"><button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-0-3-1">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-0-3-1" hidden><img src="../images/item-0-3-1.jpg" alt="Пеште пісірілген асқабақ қосылған күріш ботқасы" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-0-3-3" data-title="«Бес дән» ботқасы" data-search="«бес дән» ботқасы   каша «пять злаков»">
+<div class="line"><h4 class="line__name t-dish">«Бес дән» ботқасы<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 500 ₸</span><button class="add" type="button" data-key="0-3-3" data-price="1500" aria-label="Тізімге: «Бес дән» ботқасы, 1 500 ₸" data-label="Тізімге: «Бес дән» ботқасы, 1 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article></div>
+</section></div>
+</div></section>
+<section class="sec" id="sec-drinks" aria-labelledby="st-drinks"><div class="container">
+<h2 class="t-display sec__title sr-only" id="st-drinks">Сусындар</h2>
+<section class="cat cat--feature" id="cat-karak" data-sec="drinks" aria-labelledby="h-karak">
+<div class="mandi">
+<div class="mandi__aside">
+<figure class="mandi__photo mandi__photo--pour"><img src="../images/cover-bar-karak-karak-tea.jpg" alt="Фирмалық карак шай" width="820" height="1091" loading="lazy" decoding="async"></figure>
+<div class="mandi__head"><h3 class="t-display" id="h-karak">Карак және магриби</h3></div>
+
+</div>
+<div class="dishes"><div class="items"><article class="item" id="card-karak-tea" data-title="Фирмалық карак шай" data-search="фирмалық карак шай  s m топқа фирменный карак чай">
+<h4 class="t-dish item__title">Фирмалық карак шай</h4>
+
+<p class="item__more"><span class="badge">Ұсынамыз</span></p>
+<div class="pick"><div class="opts" role="group" aria-label="Фирмалық карак шай"><button class="opt" type="button" aria-pressed="true" data-key="2-0-4" data-price="950" data-label="S"><span>S</span><span class="opt__price">950 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="2-0-3" data-price="1250" data-label="M"><span>M</span><span class="opt__price">1 250 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="2-0-0" data-price="3800" data-label="топқа"><span>топқа</span><span class="opt__price">3 800 ₸</span></button></div><button class="add" type="button" data-key="2-0-4" data-price="950" aria-label="Тізімге: Фирмалық карак шай, S, 950 ₸" data-label="Тізімге: Фирмалық карак шай, S, 950 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+<p class="item__more"><button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-karak-tea">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo photo--lg" id="ph-karak-tea" hidden><img src="../images/item-2-0-0.jpg" alt="Фирмалық карак шай" width="820" height="1091" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-maghribi" data-title="Магриби" data-search="магриби  s m магриби">
+<h4 class="t-dish item__title">Магриби</h4>
+
+
+<div class="pick"><div class="opts" role="group" aria-label="Магриби"><button class="opt" type="button" aria-pressed="true" data-key="2-0-1" data-price="850" data-label="S"><span>S</span><span class="opt__price">850 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="2-0-2" data-price="1050" data-label="M"><span>M</span><span class="opt__price">1 050 ₸</span></button></div><button class="add" type="button" data-key="2-0-1" data-price="850" aria-label="Тізімге: Магриби, S, 850 ₸" data-label="Тізімге: Магриби, S, 850 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+</article></div></div>
+</div>
+</section>
+<div class="cats"><section class="cat" id="cat-lemonades" data-sec="drinks" aria-labelledby="h-lemonades">
+<header class="cat__head"><h3 class="t-h1" id="h-lemonades">Лимонадтар мен морстар</h3></header>
+<div class="items"><article class="item" id="card-lem-strawberry" data-title="Құлпынайлы лимонад" data-search="құлпынайлы лимонад құлпынай және алмұрт пюресі 0,5 л 1 л клубничный лимонад">
+<h4 class="t-dish item__title">Құлпынайлы лимонад</h4>
+
+
+<div class="pick"><div class="opts" role="group" aria-label="Құлпынайлы лимонад"><button class="opt" type="button" aria-pressed="true" data-key="1-4-1" data-price="1390" data-label="0,5 л"><span>0,5 л</span><span class="opt__price">1 390 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="1-4-0" data-price="2790" data-label="1 л"><span>1 л</span><span class="opt__price">2 790 ₸</span></button></div><button class="add" type="button" data-key="1-4-1" data-price="1390" aria-label="Тізімге: Құлпынайлы лимонад, 0,5 л, 1 390 ₸" data-label="Тізімге: Құлпынайлы лимонад, 0,5 л, 1 390 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+<p class="t-desc">Құлпынай және алмұрт пюресі <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-lem-strawberry">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-lem-strawberry" hidden><img src="../images/item-1-4-0.jpg" alt="Құлпынайлы лимонад" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-lem-berry" data-title="Жидек миксі" data-search="жидек миксі мүкжидек пен ежевика пюресі 0,5 л 1 л ягодный микс">
+<h4 class="t-dish item__title">Жидек миксі</h4>
+
+
+<div class="pick"><div class="opts" role="group" aria-label="Жидек миксі"><button class="opt" type="button" aria-pressed="true" data-key="1-4-3" data-price="1390" data-label="0,5 л"><span>0,5 л</span><span class="opt__price">1 390 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="1-4-2" data-price="2790" data-label="1 л"><span>1 л</span><span class="opt__price">2 790 ₸</span></button></div><button class="add" type="button" data-key="1-4-3" data-price="1390" aria-label="Тізімге: Жидек миксі, 0,5 л, 1 390 ₸" data-label="Тізімге: Жидек миксі, 0,5 л, 1 390 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+<p class="t-desc">Мүкжидек пен ежевика пюресі <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-lem-berry">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-lem-berry" hidden><img src="../images/item-1-4-2.jpg" alt="Жидек миксі" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-lem-pear" data-title="Алмұртты лимонад" data-search="алмұртты лимонад алмұрт және манго пюресі 0,5 л 1 л грушевый лимонад">
+<h4 class="t-dish item__title">Алмұртты лимонад</h4>
+
+
+<div class="pick"><div class="opts" role="group" aria-label="Алмұртты лимонад"><button class="opt" type="button" aria-pressed="true" data-key="1-4-5" data-price="1390" data-label="0,5 л"><span>0,5 л</span><span class="opt__price">1 390 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="1-4-4" data-price="2790" data-label="1 л"><span>1 л</span><span class="opt__price">2 790 ₸</span></button></div><button class="add" type="button" data-key="1-4-5" data-price="1390" aria-label="Тізімге: Алмұртты лимонад, 0,5 л, 1 390 ₸" data-label="Тізімге: Алмұртты лимонад, 0,5 л, 1 390 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+<p class="t-desc">Алмұрт және манго пюресі <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-lem-pear">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-lem-pear" hidden><img src="../images/item-1-4-4.jpg" alt="Алмұртты лимонад" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-lem-citrus" data-title="Цитрусты лимонад" data-search="цитрусты лимонад апельсин пюресі және балғын цитрустар 0,5 л 1 л цитрусовый лимонад">
+<h4 class="t-dish item__title">Цитрусты лимонад</h4>
+
+
+<div class="pick"><div class="opts" role="group" aria-label="Цитрусты лимонад"><button class="opt" type="button" aria-pressed="true" data-key="1-4-7" data-price="1390" data-label="0,5 л"><span>0,5 л</span><span class="opt__price">1 390 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="1-4-6" data-price="2790" data-label="1 л"><span>1 л</span><span class="opt__price">2 790 ₸</span></button></div><button class="add" type="button" data-key="1-4-7" data-price="1390" aria-label="Тізімге: Цитрусты лимонад, 0,5 л, 1 390 ₸" data-label="Тізімге: Цитрусты лимонад, 0,5 л, 1 390 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+<p class="t-desc">Апельсин пюресі және балғын цитрустар <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-lem-citrus">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-lem-citrus" hidden><img src="../images/item-1-4-6.jpg" alt="Цитрусты лимонад" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-lem-kiwi" data-title="Киви-алоэ лимонады" data-search="киви-алоэ лимонады кивидің қышқылтым дәмі мен алоэның жеңіл тәттілігі 0,5 л 1 л лимонад киви-алоэ">
+<h4 class="t-dish item__title">Киви-алоэ лимонады</h4>
+
+
+<div class="pick"><div class="opts" role="group" aria-label="Киви-алоэ лимонады"><button class="opt" type="button" aria-pressed="true" data-key="1-4-8" data-price="1590" data-label="0,5 л"><span>0,5 л</span><span class="opt__price">1 590 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="1-4-9" data-price="2990" data-label="1 л"><span>1 л</span><span class="opt__price">2 990 ₸</span></button></div><button class="add" type="button" data-key="1-4-8" data-price="1590" aria-label="Тізімге: Киви-алоэ лимонады, 0,5 л, 1 590 ₸" data-label="Тізімге: Киви-алоэ лимонады, 0,5 л, 1 590 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+<p class="t-desc">Кивидің қышқылтым дәмі мен алоэның жеңіл тәттілігі <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-lem-kiwi">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-lem-kiwi" hidden><img src="../images/item-1-4-8.jpg" alt="Киви-алоэ лимонады" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-lem-home" data-title="Үй лимонады" data-search="үй лимонады табиғи, газсыз 0,3 л 0,5 л 1 л домашний лимонад">
+<h4 class="t-dish item__title">Үй лимонады</h4>
+
+
+<div class="pick"><div class="opts" role="group" aria-label="Үй лимонады"><button class="opt" type="button" aria-pressed="true" data-key="1-3-9" data-price="700" data-label="0,3 л"><span>0,3 л</span><span class="opt__price">700 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="1-3-10" data-price="1200" data-label="0,5 л"><span>0,5 л</span><span class="opt__price">1 200 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="1-3-11" data-price="2400" data-label="1 л"><span>1 л</span><span class="opt__price">2 400 ₸</span></button></div><button class="add" type="button" data-key="1-3-9" data-price="700" aria-label="Тізімге: Үй лимонады, 0,3 л, 700 ₸" data-label="Тізімге: Үй лимонады, 0,3 л, 700 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+<p class="t-desc">Табиғи, газсыз <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-lem-home">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-lem-home" hidden><img src="../images/item-1-3-9.jpg" alt="Үй лимонады" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-3-6" data-title="Жидекті морс" data-search="жидекті морс мүкжидек пен ежевика 1 л морс ягодный">
+<div class="line"><h4 class="line__name t-dish">Жидекті морс <span class="ilabel t-meta">1 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 890 ₸</span><button class="add" type="button" data-key="1-3-6" data-price="1890" aria-label="Тізімге: Жидекті морс, 1 л, 1 890 ₸" data-label="Тізімге: Жидекті морс, 1 л, 1 890 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Мүкжидек пен ежевика <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-3-6">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-3-6" hidden><img src="../images/item-1-3-6.jpg" alt="Жидекті морс" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article></div>
+</section>
+<section class="cat" id="cat-author-tea" data-sec="drinks" aria-labelledby="h-author-tea">
+<header class="cat__head"><h3 class="t-h1" id="h-author-tea">Авторлық шай</h3></header>
+<div class="items"><article class="item" id="card-tea-sea-buckthorn" data-title="Шырғанақты шай" data-search="шырғанақты шай қара шай негізінде шырғанақ, апельсин және цитрус пюресі 0,3 л үлкен облепиховый чай">
+<h4 class="t-dish item__title">Шырғанақты шай</h4>
+
+
+<div class="pick"><div class="opts" role="group" aria-label="Шырғанақты шай"><button class="opt" type="button" aria-pressed="true" data-key="1-1-0" data-price="980" data-label="0,3 л"><span>0,3 л</span><span class="opt__price">980 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="1-0-0" data-price="2190" data-label="үлкен"><span>үлкен</span><span class="opt__price">2 190 ₸</span></button></div><button class="add" type="button" data-key="1-1-0" data-price="980" aria-label="Тізімге: Шырғанақты шай, 0,3 л, 980 ₸" data-label="Тізімге: Шырғанақты шай, 0,3 л, 980 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+<p class="t-desc">Қара шай негізінде шырғанақ, апельсин және цитрус пюресі <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-tea-sea-buckthorn">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-tea-sea-buckthorn" hidden><img src="../images/item-1-1-0.jpg" alt="Шырғанақты шай" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-0-1" data-title="Жебір қосылған шиелі шай" data-search="жебір қосылған шиелі шай  үлкен вишневый чай с чабрецом">
+<div class="line"><h4 class="line__name t-dish">Жебір қосылған шиелі шай <span class="ilabel t-meta">үлкен</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 190 ₸</span><button class="add" type="button" data-key="1-0-1" data-price="2190" aria-label="Тізімге: Жебір қосылған шиелі шай, үлкен, 2 190 ₸" data-label="Тізімге: Жебір қосылған шиелі шай, үлкен, 2 190 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="item__more"><button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-0-1">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-0-1" hidden><img src="../images/item-1-0-1.jpg" alt="Жебір қосылған шиелі шай" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-0-2" data-title="Бөріқарақат қосылған Судан шайы" data-search="бөріқарақат қосылған судан шайы жидек пюресі мен бөріқарақат қосылған каркаде үлкен суданский чай с барбарисом">
+<div class="line"><h4 class="line__name t-dish">Бөріқарақат қосылған Судан шайы <span class="ilabel t-meta">үлкен</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 190 ₸</span><button class="add" type="button" data-key="1-0-2" data-price="2190" aria-label="Тізімге: Бөріқарақат қосылған Судан шайы, үлкен, 2 190 ₸" data-label="Тізімге: Бөріқарақат қосылған Судан шайы, үлкен, 2 190 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Жидек пюресі мен бөріқарақат қосылған каркаде <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-0-2">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-0-2" hidden><img src="../images/item-1-0-2.jpg" alt="Бөріқарақат қосылған Судан шайы" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-0-3" data-title="Маракуйя қосылған цитрусты шай" data-search="маракуйя қосылған цитрусты шай цитрус пюресі мен маракуйя қосылған сенча көк шайы үлкен цитрусовый чай с маракуйей">
+<div class="line"><h4 class="line__name t-dish">Маракуйя қосылған цитрусты шай <span class="ilabel t-meta">үлкен</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 190 ₸</span><button class="add" type="button" data-key="1-0-3" data-price="2190" aria-label="Тізімге: Маракуйя қосылған цитрусты шай, үлкен, 2 190 ₸" data-label="Тізімге: Маракуйя қосылған цитрусты шай, үлкен, 2 190 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Цитрус пюресі мен маракуйя қосылған сенча көк шайы <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-0-3">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-0-3" hidden><img src="../images/item-1-0-3.jpg" alt="Маракуйя қосылған цитрусты шай" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-0-4" data-title="Марокко шайы" data-search="марокко шайы лайм шырыны, бал және марокко дәмдеуіштері қосылған сенча көк шайы үлкен марокканский чай">
+<div class="line"><h4 class="line__name t-dish">Марокко шайы <span class="ilabel t-meta">үлкен</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 190 ₸</span><button class="add" type="button" data-key="1-0-4" data-price="2190" aria-label="Тізімге: Марокко шайы, үлкен, 2 190 ₸" data-label="Тізімге: Марокко шайы, үлкен, 2 190 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Лайм шырыны, бал және Марокко дәмдеуіштері қосылған сенча көк шайы <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-0-4">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-0-4" hidden><img src="../images/item-1-0-4.jpg" alt="Марокко шайы" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-0-5" data-title="Зімбір қосылған мүкжидекті шай" data-search="зімбір қосылған мүкжидекті шай мүкжидек пюресі, зімбір және лимон қосылған қара шай үлкен клюквенный чай с имбирем">
+<div class="line"><h4 class="line__name t-dish">Зімбір қосылған мүкжидекті шай <span class="ilabel t-meta">үлкен</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 190 ₸</span><button class="add" type="button" data-key="1-0-5" data-price="2190" aria-label="Тізімге: Зімбір қосылған мүкжидекті шай, үлкен, 2 190 ₸" data-label="Тізімге: Зімбір қосылған мүкжидекті шай, үлкен, 2 190 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Мүкжидек пюресі, зімбір және лимон қосылған қара шай <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-0-5">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-0-5" hidden><img src="../images/item-1-0-5.jpg" alt="Зімбір қосылған мүкжидекті шай" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-1-1" data-title="Таңқурай-манго" data-search="таңқурай-манго  0,3 л малина-манго">
+<div class="line"><h4 class="line__name t-dish">Таңқурай-манго <span class="ilabel t-meta">0,3 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">980 ₸</span><button class="add" type="button" data-key="1-1-1" data-price="980" aria-label="Тізімге: Таңқурай-манго, 0,3 л, 980 ₸" data-label="Тізімге: Таңқурай-манго, 0,3 л, 980 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="item__more"><button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-1-1">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-1-1" hidden><img src="../images/item-1-1-1.jpg" alt="Таңқурай-манго" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-1-2" data-title="Қаражидек-зімбір" data-search="қаражидек-зімбір  0,3 л черника-имбирь">
+<div class="line"><h4 class="line__name t-dish">Қаражидек-зімбір <span class="ilabel t-meta">0,3 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">980 ₸</span><button class="add" type="button" data-key="1-1-2" data-price="980" aria-label="Тізімге: Қаражидек-зімбір, 0,3 л, 980 ₸" data-label="Тізімге: Қаражидек-зімбір, 0,3 л, 980 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="item__more"><button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-1-2">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-1-2" hidden><img src="../images/item-1-1-2.jpg" alt="Қаражидек-зімбір" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-1-3" data-title="Ежевика-қалампыр" data-search="ежевика-қалампыр  0,3 л ежевика-гвоздика">
+<div class="line"><h4 class="line__name t-dish">Ежевика-қалампыр <span class="ilabel t-meta">0,3 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">980 ₸</span><button class="add" type="button" data-key="1-1-3" data-price="980" aria-label="Тізімге: Ежевика-қалампыр, 0,3 л, 980 ₸" data-label="Тізімге: Ежевика-қалампыр, 0,3 л, 980 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="item__more"><button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-1-3">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-1-3" hidden><img src="../images/item-1-1-3.jpg" alt="Ежевика-қалампыр" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-1-4" data-title="Алмұрт-жебір" data-search="алмұрт-жебір  0,3 л груша-чабрец">
+<div class="line"><h4 class="line__name t-dish">Алмұрт-жебір <span class="ilabel t-meta">0,3 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">980 ₸</span><button class="add" type="button" data-key="1-1-4" data-price="980" aria-label="Тізімге: Алмұрт-жебір, 0,3 л, 980 ₸" data-label="Тізімге: Алмұрт-жебір, 0,3 л, 980 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="item__more"><button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-1-4">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-1-4" hidden><img src="../images/item-1-1-4.jpg" alt="Алмұрт-жебір" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article></div>
+</section>
+<section class="cat" id="cat-coffee" data-sec="drinks" aria-labelledby="h-coffee">
+<header class="cat__head"><h3 class="t-h1" id="h-coffee">Кофе</h3></header>
+<div class="items"><article class="item" id="card-i-1-2-0" data-title="Эспрессо" data-search="эспрессо қою, ащылығы мен қышқылдығы теңгерімді  эспрессо">
+<div class="line"><h4 class="line__name t-dish">Эспрессо<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">590 ₸</span><button class="add" type="button" data-key="1-2-0" data-price="590" aria-label="Тізімге: Эспрессо, 590 ₸" data-label="Тізімге: Эспрессо, 590 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Қою, ащылығы мен қышқылдығы теңгерімді <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-2-0">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-2-0" hidden><img src="../images/item-1-2-0.jpg" alt="Эспрессо" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-americano" data-title="Американо" data-search="американо ыстық су қосылған қос эспрессо s m американо">
+<h4 class="t-dish item__title">Американо</h4>
+
+
+<div class="pick"><div class="opts" role="group" aria-label="Американо"><button class="opt" type="button" aria-pressed="true" data-key="1-2-3" data-price="890" data-label="S"><span>S</span><span class="opt__price">890 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="1-2-4" data-price="990" data-label="M"><span>M</span><span class="opt__price">990 ₸</span></button></div><button class="add" type="button" data-key="1-2-3" data-price="890" aria-label="Тізімге: Американо, S, 890 ₸" data-label="Тізімге: Американо, S, 890 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+<p class="t-desc">Ыстық су қосылған қос эспрессо <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-americano">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-americano" hidden><img src="../images/item-1-2-3.jpg" alt="Американо" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-cappuccino" data-title="Капучино" data-search="капучино тығыз сүт көбігі бар эспрессо s m капучино">
+<h4 class="t-dish item__title">Капучино</h4>
+
+
+<div class="pick"><div class="opts" role="group" aria-label="Капучино"><button class="opt" type="button" aria-pressed="true" data-key="1-2-1" data-price="980" data-label="S"><span>S</span><span class="opt__price">980 ₸</span></button><button class="opt" type="button" aria-pressed="false" data-key="1-2-2" data-price="1290" data-label="M"><span>M</span><span class="opt__price">1 290 ₸</span></button></div><button class="add" type="button" data-key="1-2-1" data-price="980" aria-label="Тізімге: Капучино, S, 980 ₸" data-label="Тізімге: Капучино, S, 980 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+<p class="t-desc">Тығыз сүт көбігі бар эспрессо <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-cappuccino">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-cappuccino" hidden><img src="../images/item-1-2-1.jpg" alt="Капучино" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-2-5" data-title="Латте" data-search="латте эспрессо және жылытылған сүт m латте">
+<div class="line"><h4 class="line__name t-dish">Латте <span class="ilabel t-meta">M</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 290 ₸</span><button class="add" type="button" data-key="1-2-5" data-price="1290" aria-label="Тізімге: Латте, M, 1 290 ₸" data-label="Тізімге: Латте, M, 1 290 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Эспрессо және жылытылған сүт <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-2-5">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-2-5" hidden><img src="../images/item-1-2-5.jpg" alt="Латте" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-2-6" data-title="Флэт уайт" data-search="флэт уайт қос эспрессо және жылытылған сүт  флэт уайт">
+<div class="line"><h4 class="line__name t-dish">Флэт уайт<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 390 ₸</span><button class="add" type="button" data-key="1-2-6" data-price="1390" aria-label="Тізімге: Флэт уайт, 1 390 ₸" data-label="Тізімге: Флэт уайт, 1 390 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Қос эспрессо және жылытылған сүт <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-2-6">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-2-6" hidden><img src="../images/item-1-2-6.jpg" alt="Флэт уайт" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-2-7" data-title="Раф кофе" data-search="раф кофе майлылығы 10 % кілегей қосылған эспрессо  раф кофе">
+<div class="line"><h4 class="line__name t-dish">Раф кофе<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 690 ₸</span><button class="add" type="button" data-key="1-2-7" data-price="1690" aria-label="Тізімге: Раф кофе, 1 690 ₸" data-label="Тізімге: Раф кофе, 1 690 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Майлылығы 10 % кілегей қосылған эспрессо <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-2-7">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-2-7" hidden><img src="../images/item-1-2-7.jpg" alt="Раф кофе" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article></div>
+</section>
+<section class="cat" id="cat-iced-coffee" data-sec="drinks" aria-labelledby="h-iced-coffee">
+<header class="cat__head"><h3 class="t-h1" id="h-iced-coffee">Суық кофе</h3></header>
+<div class="items"><article class="item" id="card-i-1-7-0" data-title="Айс латте" data-search="айс латте эспрессо және сүт 0,3 л айс латте">
+<div class="line"><h4 class="line__name t-dish">Айс латте <span class="ilabel t-meta">0,3 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 490 ₸</span><button class="add" type="button" data-key="1-7-0" data-price="1490" aria-label="Тізімге: Айс латте, 0,3 л, 1 490 ₸" data-label="Тізімге: Айс латте, 0,3 л, 1 490 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Эспрессо және сүт <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-7-0">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-7-0" hidden><img src="../images/item-1-7-0.jpg" alt="Айс латте" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-7-1" data-title="Айс капучино" data-search="айс капучино қос эспрессо және сүт 0,3 л айс капучино">
+<div class="line"><h4 class="line__name t-dish">Айс капучино <span class="ilabel t-meta">0,3 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 490 ₸</span><button class="add" type="button" data-key="1-7-1" data-price="1490" aria-label="Тізімге: Айс капучино, 0,3 л, 1 490 ₸" data-label="Тізімге: Айс капучино, 0,3 л, 1 490 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Қос эспрессо және сүт <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-7-1">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-7-1" hidden><img src="../images/item-1-7-1.jpg" alt="Айс капучино" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-7-2" data-title="Бамбл кофе" data-search="бамбл кофе қос эспрессо және апельсин фреші 0,3 л бамбл кофе">
+<div class="line"><h4 class="line__name t-dish">Бамбл кофе <span class="ilabel t-meta">0,3 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 700 ₸</span><button class="add" type="button" data-key="1-7-2" data-price="2700" aria-label="Тізімге: Бамбл кофе, 0,3 л, 2 700 ₸" data-label="Тізімге: Бамбл кофе, 0,3 л, 2 700 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Қос эспрессо және апельсин фреші <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-7-2">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo photo--lg" id="ph-i-1-7-2" hidden><img src="../images/item-1-7-2.jpg" alt="Бамбл кофе" width="820" height="830" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-7-3" data-title="Колд макадамия" data-search="колд макадамия  0,3 л колд макадамия">
+<div class="line"><h4 class="line__name t-dish">Колд макадамия <span class="ilabel t-meta">0,3 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 590 ₸</span><button class="add" type="button" data-key="1-7-3" data-price="1590" aria-label="Тізімге: Колд макадамия, 0,3 л, 1 590 ₸" data-label="Тізімге: Колд макадамия, 0,3 л, 1 590 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="item__more"><button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-7-3">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-7-3" hidden><img src="../images/item-1-7-3.jpg" alt="Колд макадамия" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article></div>
+</section>
+<section class="cat" id="cat-not-coffee" data-sec="drinks" aria-labelledby="h-not-coffee">
+<header class="cat__head"><h3 class="t-h1" id="h-not-coffee">Кофе емес</h3></header>
+<div class="items"><article class="item" id="card-i-1-3-0" data-title="Айс матча манго" data-search="айс матча манго жасыл матча мен манго пюресі қосылған сүт сусыны 0,4 л айс матча манго">
+<div class="line"><h4 class="line__name t-dish">Айс матча манго <span class="ilabel t-meta">0,4 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 690 ₸</span><button class="add" type="button" data-key="1-3-0" data-price="1690" aria-label="Тізімге: Айс матча манго, 0,4 л, 1 690 ₸" data-label="Тізімге: Айс матча манго, 0,4 л, 1 690 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Жасыл матча мен манго пюресі қосылған сүт сусыны <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-3-0">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-3-0" hidden><img src="../images/item-1-3-0.jpg" alt="Айс матча манго" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-3-4" data-title="Айс блю матча карамель" data-search="айс блю матча карамель карамель қосылған көгілдір матча 0,4 л айс блю матча карамель">
+<div class="line"><h4 class="line__name t-dish">Айс блю матча карамель <span class="ilabel t-meta">0,4 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 690 ₸</span><button class="add" type="button" data-key="1-3-4" data-price="1690" aria-label="Тізімге: Айс блю матча карамель, 0,4 л, 1 690 ₸" data-label="Тізімге: Айс блю матча карамель, 0,4 л, 1 690 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Карамель қосылған көгілдір матча <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-3-4">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-3-4" hidden><img src="../images/item-1-3-4.jpg" alt="Айс блю матча карамель" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-3-2" data-title="Тайша айс-ти" data-search="тайша айс-ти апельсин пюресі қосылған тай анчан шайы 0,4 л тайский айс-ти">
+<div class="line"><h4 class="line__name t-dish">Тайша айс-ти <span class="ilabel t-meta">0,4 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 390 ₸</span><button class="add" type="button" data-key="1-3-2" data-price="1390" aria-label="Тізімге: Тайша айс-ти, 0,4 л, 1 390 ₸" data-label="Тізімге: Тайша айс-ти, 0,4 л, 1 390 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Апельсин пюресі қосылған тай анчан шайы <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-3-2">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-3-2" hidden><img src="../images/item-1-3-2.jpg" alt="Тайша айс-ти" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-3-3" data-title="Цитрусты айс-ти" data-search="цитрусты айс-ти цитрус пюресі қосылған эрл грей шайы 0,4 л цитрусовый айс-ти">
+<div class="line"><h4 class="line__name t-dish">Цитрусты айс-ти <span class="ilabel t-meta">0,4 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 190 ₸</span><button class="add" type="button" data-key="1-3-3" data-price="1190" aria-label="Тізімге: Цитрусты айс-ти, 0,4 л, 1 190 ₸" data-label="Тізімге: Цитрусты айс-ти, 0,4 л, 1 190 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Цитрус пюресі қосылған эрл грей шайы <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-3-3">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-3-3" hidden><img src="../images/item-1-3-3.jpg" alt="Цитрусты айс-ти" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-3-5" data-title="Айс-ти жасмин-құлпынай" data-search="айс-ти жасмин-құлпынай  0,4 л айс-ти жасмин-клубника">
+<div class="line"><h4 class="line__name t-dish">Айс-ти жасмин-құлпынай <span class="ilabel t-meta">0,4 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 190 ₸</span><button class="add" type="button" data-key="1-3-5" data-price="1190" aria-label="Тізімге: Айс-ти жасмин-құлпынай, 0,4 л, 1 190 ₸" data-label="Тізімге: Айс-ти жасмин-құлпынай, 0,4 л, 1 190 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="item__more"><button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-3-5">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-3-5" hidden><img src="../images/item-1-3-5.jpg" alt="Айс-ти жасмин-құлпынай" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-3-8" data-title="Ежевикалы айс-ти" data-search="ежевикалы айс-ти  0,4 л ежевичный айс-ти">
+<div class="line"><h4 class="line__name t-dish">Ежевикалы айс-ти <span class="ilabel t-meta">0,4 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 290 ₸</span><button class="add" type="button" data-key="1-3-8" data-price="1290" aria-label="Тізімге: Ежевикалы айс-ти, 0,4 л, 1 290 ₸" data-label="Тізімге: Ежевикалы айс-ти, 0,4 л, 1 290 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-1-3-1" data-title="Апельсин фреші" data-search="апельсин фреші жаңа сығылған апельсин шырыны 0,25 л апельсиновый фреш">
+<div class="line"><h4 class="line__name t-dish">Апельсин фреші <span class="ilabel t-meta">0,25 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 100 ₸</span><button class="add" type="button" data-key="1-3-1" data-price="2100" aria-label="Тізімге: Апельсин фреші, 0,25 л, 2 100 ₸" data-label="Тізімге: Апельсин фреші, 0,25 л, 2 100 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Жаңа сығылған апельсин шырыны <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-3-1">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-3-1" hidden><img src="../images/item-1-3-1.jpg" alt="Апельсин фреші" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-3-7" data-title="Какао" data-search="какао   какао">
+<div class="line"><h4 class="line__name t-dish">Какао<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">900 ₸</span><button class="add" type="button" data-key="1-3-7" data-price="900" aria-label="Тізімге: Какао, 900 ₸" data-label="Тізімге: Какао, 900 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article></div>
+</section>
+<section class="cat" id="cat-smoothies" data-sec="drinks" aria-labelledby="h-smoothies">
+<header class="cat__head"><h3 class="t-h1" id="h-smoothies">Смузи мен милкшейктер</h3></header>
+<div class="items"><article class="item" id="card-i-1-6-0" data-title="Қаражидекті смузи" data-search="қаражидекті смузи қаражидек, банан және қаражидек пюресі 0,4 л черничный смузи">
+<div class="line"><h4 class="line__name t-dish">Қаражидекті смузи <span class="ilabel t-meta">0,4 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 990 ₸</span><button class="add" type="button" data-key="1-6-0" data-price="1990" aria-label="Тізімге: Қаражидекті смузи, 0,4 л, 1 990 ₸" data-label="Тізімге: Қаражидекті смузи, 0,4 л, 1 990 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Қаражидек, банан және қаражидек пюресі <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-6-0">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-6-0" hidden><img src="../images/item-1-6-0.jpg" alt="Қаражидекті смузи" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-6-1" data-title="Жидекті смузи" data-search="жидекті смузи жидектер және жидек пюресі 0,4 л ягодный смузи">
+<div class="line"><h4 class="line__name t-dish">Жидекті смузи <span class="ilabel t-meta">0,4 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 990 ₸</span><button class="add" type="button" data-key="1-6-1" data-price="1990" aria-label="Тізімге: Жидекті смузи, 0,4 л, 1 990 ₸" data-label="Тізімге: Жидекті смузи, 0,4 л, 1 990 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Жидектер және жидек пюресі <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-6-1">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-6-1" hidden><img src="../images/item-1-6-1.jpg" alt="Жидекті смузи" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-6-4" data-title="Киви-құрмалы смузи" data-search="киви-құрмалы смузи балғын құрма және киви 0,3 л смузи киви-финики">
+<div class="line"><h4 class="line__name t-dish">Киви-құрмалы смузи <span class="ilabel t-meta">0,3 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 990 ₸</span><button class="add" type="button" data-key="1-6-4" data-price="1990" aria-label="Тізімге: Киви-құрмалы смузи, 0,3 л, 1 990 ₸" data-label="Тізімге: Киви-құрмалы смузи, 0,3 л, 1 990 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Балғын құрма және киви <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-6-4">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-6-4" hidden><img src="../images/item-1-6-4.jpg" alt="Киви-құрмалы смузи" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-6-2" data-title="Ванильді милкшейк" data-search="ванильді милкшейк кілегейлі балмұздақ, сүт және көпіршітілген кілегей 0,3 л ванильный милкшейк">
+<div class="line"><h4 class="line__name t-dish">Ванильді милкшейк <span class="ilabel t-meta">0,3 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 590 ₸</span><button class="add" type="button" data-key="1-6-2" data-price="1590" aria-label="Тізімге: Ванильді милкшейк, 0,3 л, 1 590 ₸" data-label="Тізімге: Ванильді милкшейк, 0,3 л, 1 590 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Кілегейлі балмұздақ, сүт және көпіршітілген кілегей <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-6-2">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-6-2" hidden><img src="../images/item-1-6-2.jpg" alt="Ванильді милкшейк" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-6-3" data-title="Құлпынайлы милкшейк" data-search="құлпынайлы милкшейк құлпынайлы балмұздақ, сүт және көпіршітілген кілегей 0,3 л клубничный милкшейк">
+<div class="line"><h4 class="line__name t-dish">Құлпынайлы милкшейк <span class="ilabel t-meta">0,3 л</span><span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 590 ₸</span><button class="add" type="button" data-key="1-6-3" data-price="1590" aria-label="Тізімге: Құлпынайлы милкшейк, 0,3 л, 1 590 ₸" data-label="Тізімге: Құлпынайлы милкшейк, 0,3 л, 1 590 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Құлпынайлы балмұздақ, сүт және көпіршітілген кілегей <button class="text-btn text-btn--quiet photo-toggle" type="button" aria-expanded="false" aria-controls="ph-i-1-6-3">Фото<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></p>
+<figure class="photo" id="ph-i-1-6-3" hidden><img src="../images/item-1-6-3.jpg" alt="Құлпынайлы милкшейк" width="140" height="140" loading="lazy" decoding="async"></figure>
+</article>
+<article class="item" id="card-i-1-6-5" data-title="Құрмалы милкшейк" data-search="құрмалы милкшейк   финиковый милкшейк">
+<div class="line"><h4 class="line__name t-dish">Құрмалы милкшейк<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 900 ₸</span><button class="add" type="button" data-key="1-6-5" data-price="1900" aria-label="Тізімге: Құрмалы милкшейк, 1 900 ₸" data-label="Тізімге: Құрмалы милкшейк, 1 900 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article></div>
+</section>
+<section class="cat" id="cat-leaf-tea" data-sec="drinks" aria-labelledby="h-leaf-tea">
+<header class="cat__head"><h3 class="t-h1" id="h-leaf-tea">Жапырақты шай</h3></header>
+<div class="items"><article class="item" id="card-i-1-5-3" data-title="Ассам" data-search="ассам классикалық қара шай  ассам">
+<div class="line"><h4 class="line__name t-dish">Ассам<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 200 ₸</span><button class="add" type="button" data-key="1-5-3" data-price="1200" aria-label="Тізімге: Ассам, 1 200 ₸" data-label="Тізімге: Ассам, 1 200 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Классикалық қара шай</p>
+
+</article>
+<article class="item" id="card-i-1-5-2" data-title="Эрл грей" data-search="эрл грей   эрл грей">
+<div class="line"><h4 class="line__name t-dish">Эрл грей<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 500 ₸</span><button class="add" type="button" data-key="1-5-2" data-price="1500" aria-label="Тізімге: Эрл грей, 1 500 ₸" data-label="Тізімге: Эрл грей, 1 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-1-5-0" data-title="Сүтті улун" data-search="сүтті улун   молочный улун">
+<div class="line"><h4 class="line__name t-dish">Сүтті улун<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 500 ₸</span><button class="add" type="button" data-key="1-5-0" data-price="1500" aria-label="Тізімге: Сүтті улун, 1 500 ₸" data-label="Тізімге: Сүтті улун, 1 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-1-5-1" data-title="Те гуань инь" data-search="те гуань инь   те гуань инь">
+<div class="line"><h4 class="line__name t-dish">Те гуань инь<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 500 ₸</span><button class="add" type="button" data-key="1-5-1" data-price="1500" aria-label="Тізімге: Те гуань инь, 1 500 ₸" data-label="Тізімге: Те гуань инь, 1 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-1-5-4" data-title="Тары шай" data-search="тары шай   тары чай">
+<div class="line"><h4 class="line__name t-dish">Тары шай<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 400 ₸</span><button class="add" type="button" data-key="1-5-4" data-price="2400" aria-label="Тізімге: Тары шай, 2 400 ₸" data-label="Тізімге: Тары шай, 2 400 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article></div>
+</section>
+<section class="cat" id="cat-soda" data-sec="drinks" aria-labelledby="h-soda">
+<header class="cat__head"><h3 class="t-h1" id="h-soda">Газдалған сусындар</h3></header>
+<div class="items"><article class="item" id="card-i-1-8-0" data-title="Мекка cola" data-search="мекка cola араб классикасы — дәстүрлі коланың терең дәмі  мекка cola">
+<div class="line"><h4 class="line__name t-dish">Мекка cola<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 050 ₸</span><button class="add" type="button" data-key="1-8-0" data-price="1050" aria-label="Тізімге: Мекка cola, 1 050 ₸" data-label="Тізімге: Мекка cola, 1 050 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Араб классикасы — дәстүрлі коланың терең дәмі</p>
+
+</article>
+<article class="item" id="card-i-1-8-1" data-title="Milaf cola" data-search="milaf cola құрма негізіндегі кола, карамель реңктерімен  milaf cola">
+<div class="line"><h4 class="line__name t-dish">Milaf cola<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 050 ₸</span><button class="add" type="button" data-key="1-8-1" data-price="1050" aria-label="Тізімге: Milaf cola, 1 050 ₸" data-label="Тізімге: Milaf cola, 1 050 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Құрма негізіндегі кола, карамель реңктерімен</p>
+
+</article>
+<article class="item" id="card-i-1-8-2" data-title="Kinza (түрлері бар)" data-search="kinza (түрлері бар) лимон-лайм дәмді араб сусыны  kinza в ассортименте">
+<div class="line"><h4 class="line__name t-dish">Kinza (түрлері бар)<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 050 ₸</span><button class="add" type="button" data-key="1-8-2" data-price="1050" aria-label="Тізімге: Kinza (түрлері бар), 1 050 ₸" data-label="Тізімге: Kinza (түрлері бар), 1 050 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+<p class="t-desc">Лимон-лайм дәмді араб сусыны</p>
+
+</article>
+<article class="item" id="card-i-1-9-4" data-title="Швепс" data-search="швепс   швепс">
+<div class="line"><h4 class="line__name t-dish">Швепс<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 200 ₸</span><button class="add" type="button" data-key="1-9-4" data-price="1200" aria-label="Тізімге: Швепс, 1 200 ₸" data-label="Тізімге: Швепс, 1 200 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article></div>
+</section>
+<section class="cat" id="cat-tonic" data-sec="drinks" aria-labelledby="h-tonic">
+<header class="cat__head"><h3 class="t-h1" id="h-tonic">Тониктер</h3></header>
+<div class="items"><article class="item" id="card-i-1-9-0" data-title="Таңқурайлы тоник" data-search="таңқурайлы тоник   малиновый тоник">
+<div class="line"><h4 class="line__name t-dish">Таңқурайлы тоник<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 280 ₸</span><button class="add" type="button" data-key="1-9-0" data-price="2280" aria-label="Тізімге: Таңқурайлы тоник, 2 280 ₸" data-label="Тізімге: Таңқурайлы тоник, 2 280 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-1-9-1" data-title="Цитрусты тоник" data-search="цитрусты тоник   цитрусовый тоник">
+<div class="line"><h4 class="line__name t-dish">Цитрусты тоник<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 280 ₸</span><button class="add" type="button" data-key="1-9-1" data-price="2280" aria-label="Тізімге: Цитрусты тоник, 2 280 ₸" data-label="Тізімге: Цитрусты тоник, 2 280 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-1-9-2" data-title="Жидекті тоник" data-search="жидекті тоник   ягодный тоник">
+<div class="line"><h4 class="line__name t-dish">Жидекті тоник<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 280 ₸</span><button class="add" type="button" data-key="1-9-2" data-price="2280" aria-label="Тізімге: Жидекті тоник, 2 280 ₸" data-label="Тізімге: Жидекті тоник, 2 280 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-1-9-3" data-title="Батч-брю тоник" data-search="батч-брю тоник   батч-брю тоник">
+<div class="line"><h4 class="line__name t-dish">Батч-брю тоник<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 280 ₸</span><button class="add" type="button" data-key="1-9-3" data-price="2280" aria-label="Тізімге: Батч-брю тоник, 2 280 ₸" data-label="Тізімге: Батч-брю тоник, 2 280 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article></div>
+</section></div>
+</div></section>
+<section class="sec" id="sec-desserts" aria-labelledby="st-desserts"><div class="container">
+<h2 class="t-display sec__title" id="st-desserts">Десерттер</h2>
+<div class="cats"><section class="cat" id="cat-showcase" data-sec="desserts" aria-labelledby="h-showcase">
+<header class="cat__head"><h3 class="t-h1" id="h-showcase">Витринадағы десерттер</h3><p class="t-desc cat__lead">Карак пен шайға тәттілер</p></header>
+<div class="items"><article class="item" id="card-i-3-0-2" data-title="Пістелі рулет" data-search="пістелі рулет   фисташковый рулет">
+<div class="line"><h4 class="line__name t-dish">Пістелі рулет<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 500 ₸</span><button class="add" type="button" data-key="3-0-2" data-price="2500" aria-label="Тізімге: Пістелі рулет, 2 500 ₸" data-label="Тізімге: Пістелі рулет, 2 500 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-3-0-1" data-title="Испанша чизкейк" data-search="испанша чизкейк   чизкейк испанский">
+<div class="line"><h4 class="line__name t-dish">Испанша чизкейк<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 000 ₸</span><button class="add" type="button" data-key="3-0-1" data-price="2000" aria-label="Тізімге: Испанша чизкейк, 2 000 ₸" data-label="Тізімге: Испанша чизкейк, 2 000 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-3-0-3" data-title="Тары чизкейк" data-search="тары чизкейк   чизкейк тары">
+<div class="line"><h4 class="line__name t-dish">Тары чизкейк<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 000 ₸</span><button class="add" type="button" data-key="3-0-3" data-price="2000" aria-label="Тізімге: Тары чизкейк, 2 000 ₸" data-label="Тізімге: Тары чизкейк, 2 000 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-3-0-4" data-title="Наполеон" data-search="наполеон   наполеон">
+<div class="line"><h4 class="line__name t-dish">Наполеон<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">2 200 ₸</span><button class="add" type="button" data-key="3-0-4" data-price="2200" aria-label="Тізімге: Наполеон, 2 200 ₸" data-label="Тізімге: Наполеон, 2 200 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-3-0-5" data-title="Медовик" data-search="медовик   медовик">
+<div class="line"><h4 class="line__name t-dish">Медовик<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">1 900 ₸</span><button class="add" type="button" data-key="3-0-5" data-price="1900" aria-label="Тізімге: Медовик, 1 900 ₸" data-label="Тізімге: Медовик, 1 900 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-3-0-8" data-title="Шайға арналған жаңғақ пен кептірілген жеміс ассортиі" data-search="шайға арналған жаңғақ пен кептірілген жеміс ассортиі   чайное ассорти из орехов и сухофруктов">
+<div class="line"><h4 class="line__name t-dish">Шайға арналған жаңғақ пен кептірілген жеміс ассортиі<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">3 000 ₸</span><button class="add" type="button" data-key="3-0-8" data-price="3000" aria-label="Тізімге: Шайға арналған жаңғақ пен кептірілген жеміс ассортиі, 3 000 ₸" data-label="Тізімге: Шайға арналған жаңғақ пен кептірілген жеміс ассортиі, 3 000 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-3-0-0" data-title="Шоколадтағы құрма" data-search="шоколадтағы құрма   финики в шоколаде">
+<div class="line"><h4 class="line__name t-dish">Шоколадтағы құрма<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">800 ₸</span><button class="add" type="button" data-key="3-0-0" data-price="800" aria-label="Тізімге: Шоколадтағы құрма, 800 ₸" data-label="Тізімге: Шоколадтағы құрма, 800 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-3-0-6" data-title="Қоюлатылған сүт салынған орешек" data-search="қоюлатылған сүт салынған орешек   орешек со сгущенкой">
+<div class="line"><h4 class="line__name t-dish">Қоюлатылған сүт салынған орешек<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">350 ₸</span><button class="add" type="button" data-key="3-0-6" data-price="350" aria-label="Тізімге: Қоюлатылған сүт салынған орешек, 350 ₸" data-label="Тізімге: Қоюлатылған сүт салынған орешек, 350 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item" id="card-i-3-0-9" data-title="Жент" data-search="жент   жент">
+<div class="line"><h4 class="line__name t-dish">Жент<span class="line__dots" aria-hidden="true"></span></h4><span class="t-price">350 ₸</span><button class="add" type="button" data-key="3-0-9" data-price="350" aria-label="Тізімге: Жент, 350 ₸" data-label="Тізімге: Жент, 350 ₸"><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+
+
+
+
+
+</article>
+<article class="item is-oos" id="card-i-3-0-7" data-title="Қайнатылған қоюлатылған сүт салынған вафли түтікшесі" data-search="қайнатылған қоюлатылған сүт салынған вафли түтікшесі   вафельная трубочка с вареной сгущенкой">
+<div class="line line--oos"><h4 class="line__name t-dish">Қайнатылған қоюлатылған сүт салынған вафли түтікшесі</h4><button class="add" type="button" data-key="3-0-7" aria-label="Қайнатылған қоюлатылған сүт салынған вафли түтікшесі, қолда жоқ" data-label="Қайнатылған қоюлатылған сүт салынған вафли түтікшесі, қолда жоқ" disabled><svg class="i-plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12"/></svg><span class="add__n" aria-hidden="true"></span></button></div>
+<p class="oos">қолда жоқ</p>
+
+
+
+
+</article></div>
+</section></div>
+</div></section>
+<section class="about" aria-labelledby="h-about"><div class="container"><div class="panel">
+<h2 class="t-h1" id="h-about">Мейрамхана туралы</h2>
+<p class="t-body">Араб (Йемен) асханасы. Халал асхана.</p>
+<p class="t-meta">Астана, Мақсұт Нәрікбаев көшесі, 5</p>
+<p class="t-meta">Күн сайын, 11:00–01:00</p>
+<p class="t-body">Тағамдардың құрамы мен аллергендер туралы даяшыдан сұраңыз.</p>
+<div class="about__links"><a class="btn btn--primary" href="tel:+77782453572">Қоңырау шалу</a><a class="btn btn--secondary" href="https://api.whatsapp.com/send?phone=77782453572" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--secondary" href="https://www.instagram.com/mandi_center.kz" target="_blank" rel="noopener">Instagram</a><a class="btn btn--secondary" href="https://go.2gis.com/jdbi8" target="_blank" rel="noopener">2GIS</a></div>
+</div></div></section>
+</main>
+<footer class="foot"><div class="container"><span class="wordmark">Mandi Center</span><p class="t-meta">Бағалар теңгемен.</p></div></footer>
+
+<div class="listbar" id="listbar" hidden><div class="listbar__in">
+<div><p class="listbar__label">Менің тізімім</p><p class="listbar__sum"><span id="lb-count"></span><span id="lb-total"></span></p></div>
+<button class="btn btn--primary" id="lb-open" type="button" aria-haspopup="dialog" aria-controls="sheet">Ашу</button>
+</div></div>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-h" hidden>
+<div class="sheet__scrim"></div>
+<div class="sheet__panel">
+<div class="sheet__head"><h2 class="t-h2" id="sheet-h">Менің тізімім</h2><button class="icon-btn" id="sheet-close" type="button" aria-label="Жабу"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<div class="sheet__body"><ul class="ol" id="sheet-lines"></ul></div>
+<div class="sheet__foot">
+<div class="sheet__total"><span class="t-h2">Барлығы</span><span class="t-price-lg" id="sheet-total"></span></div>
+<p class="t-meta">Тізім тек осы телефонда сақталады және ешқайда жіберілмейді. Дайын болғанда, оны даяшыға көрсетіңіз.</p>
+<div class="sheet__actions"><button class="btn btn--secondary" id="clear" type="button">Тазарту</button><button class="btn btn--primary btn--lg" id="show-waiter" type="button">Даяшыға көрсету</button></div>
+</div>
+</div>
+</div>
+
+<div class="waiter" id="waiter" role="dialog" aria-modal="true" aria-labelledby="w-h" data-theme="light" hidden><div class="waiter__in">
+<div class="waiter__top"><span class="wordmark">Mandi Center</span><button class="btn btn--secondary" id="waiter-close" type="button">Тізімге оралу</button></div>
+<h2 class="t-display waiter__title" id="w-h">Үстелге тапсырыс</h2>
+<ol class="wl" id="w-lines"></ol>
+<div class="waiter__total"><span>Барлығы</span><span id="w-total"></span></div>
+<p class="t-body waiter__note">Бұл экранды даяшыға көрсетіңіз</p>
+</div></div>
+
+<div class="sr-only" id="live" role="status" aria-live="polite"></div>
+<script type="application/json" id="menu-data">{"lang":"kk","ui":{"htmlLang":"kk","pageTitle":"Mandi Center — мәзір","metaDescription":"Астанадағы Mandi Center мәзірі: 1, 2 және 5 адамға арналған манди, карак, лимонадтар мен десерттер. Араб (Йемен) халал асханасы.","skipToMenu":"Мәзірге өту","langNav":"Мәзір тілі","langRu":"РУС","langKk":"ҚАЗ","langRuFull":"Русский","langKkFull":"Қазақша","searchOpen":"Мәзірден іздеу","searchLabel":"Мәзірден іздеу","searchPlaceholder":"Тағам немесе сусын","searchClose":"Іздеуді жабу","searchEmpty":"Ештеңе табылмады. Басқа сөзбен іздеп көріңіз.","searchFound":"Табылды: {n}","themeToLight":"Ашық тақырып","themeToDark":"Қараңғы тақырып","statusOpen":"01:00-ге дейін ашық","statusClosed":"11:00-де ашылады","sectionsNav":"Мәзір бөлімдері","categoriesNav":"Санаттар","howMany":"Неше адамға?","perPerson":"бір адамға — {price}","cooking":"Дайындау тәсілі","fallbackNoOne":"Тек 2 және 5 адамға дайындаймыз","fallbackNoFive":"1 порция және 2 адамға дайындаймыз","whatIsMandi":"Манди деген не","photo":"Фото","addTo":"Тізімге: {name}","added":"Қосылды: {name}","inList":"тізімде: {n}","outOfStock":"қолда жоқ","about":"Мейрамхана туралы","call":"Қоңырау шалу","whatsapp":"WhatsApp","instagram":"Instagram","twogis":"2GIS","allergens":"Тағамдардың құрамы мен аллергендер туралы даяшыдан сұраңыз.","pricesNote":"Бағалар теңгемен.","listTitle":"Менің тізімім","listItems":"{n} позиция","listOpen":"Ашу","listClose":"Жабу","listTotal":"Барлығы","listEmpty":"Тізім бос. Тағамды қосу үшін оның жанындағы «+» белгісін басыңыз.","listNote":"Тізім тек осы телефонда сақталады және ешқайда жіберілмейді. Дайын болғанда, оны даяшыға көрсетіңіз.","listDecrease":"Біреуін алып тастау: {name}","listIncrease":"Тағы қосу: {name}","listClear":"Тазарту","listClearConfirm":"Тазарту үшін тағы бір рет басыңыз","listCleared":"Тізім тазартылды","showWaiter":"Даяшыға көрсету","waiterTitle":"Үстелге тапсырыс","waiterNote":"Бұл экранды даяшыға көрсетіңіз","waiterBack":"Тізімге оралу","footerBrand":"Mandi Center","portionsSet":"Барлық мандиде {n} адамдық үлес таңдалды","unitPrice":"{n} × {price}"},"items":{"0-0-0":{"t":"Тауық етімен манди","l":"1 адамға","p":3800,"ru":"Манди с курицей","lru":"1 персона"},"0-0-1":{"t":"Тауық етімен манди","l":"2 адамға","p":7500,"ru":"Манди с курицей","lru":"2 персоны"},"0-0-2":{"t":"Тауық етімен манди","l":"5 адамға","p":16000,"ru":"Манди с курицей","lru":"5 персон"},"0-0-3":{"t":"Қой етімен манди","l":"1 адамға","p":8690,"ru":"Манди с бараниной","lru":"1 персона"},"0-0-4":{"t":"Қой етімен манди","l":"2 адамға","p":15290,"ru":"Манди с бараниной","lru":"2 персоны"},"0-0-5":{"t":"Қой етімен манди","l":"5 адамға","p":26290,"ru":"Манди с бараниной","lru":"5 персон"},"0-0-6":{"t":"Манди ассорти","l":"2 адамға","p":13530,"ru":"Манди ассорти","lru":"2 персоны"},"0-0-7":{"t":"Манди ассорти","l":"5 адамға","p":21990,"ru":"Манди ассорти","lru":"5 персон"},"0-0-10":{"t":"Барбекю тауық етімен манди","l":"1 адамға","p":4000,"ru":"Манди с курицей барбекю","lru":"1 персона"},"0-0-11":{"t":"Барбекю тауық етімен манди","l":"2 адамға","p":8500,"ru":"Манди с курицей барбекю","lru":"2 персоны"},"0-0-12":{"t":"Барбекю тауық етімен манди","l":"5 адамға","p":17000,"ru":"Манди с курицей барбекю","lru":"5 персон"},"0-0-8":{"t":"Көксеркемен манди","l":"1 порция","p":4000,"ru":"Манди с судаком","lru":"1 порция"},"0-0-9":{"t":"Көксеркемен манди","l":"2 адамға","p":8500,"ru":"Манди с судаком","lru":"2 персоны"},"0-8-0":{"t":"Ақ соус","l":"","p":300,"ru":"Белый соус","lru":""},"0-8-1":{"t":"Қызыл соус","l":"","p":300,"ru":"Красный соус","lru":""},"0-8-7":{"t":"Пита наны","l":"","p":490,"ru":"Лепёшка пита","lru":""},"0-8-4":{"t":"Тауық еті","l":"","p":1650,"ru":"Курица","lru":""},"0-8-5":{"t":"Барбекю тауық еті","l":"","p":2175,"ru":"Курица барбекю","lru":""},"0-8-2":{"t":"Барбекю көксерке","l":"","p":2175,"ru":"Судак барбекю","lru":""},"0-8-3":{"t":"Қуырылған көксерке","l":"","p":2175,"ru":"Судак фрай","lru":""},"0-8-6":{"t":"Қой еті","l":"","p":5900,"ru":"Баранина","lru":""},"0-1-0":{"t":"Тауық етімен чапати тәрелкеде","l":"","p":3200,"ru":"Чапати с курицей в тарелке","lru":""},"0-6-0":{"t":"Баттер чикен масала","l":"","p":3600,"ru":"Баттер чикен масала","lru":""},"0-1-1":{"t":"Кілегейлі соустағы саңырауқұлақты тауық еті және пюре","l":"","p":2800,"ru":"Курица с грибами под сливочным соусом и пюре","lru":""},"0-1-2":{"t":"Тауық еті мен саңырауқұлақ қосылған паста","l":"","p":2900,"ru":"Паста с курицей и грибами","lru":""},"0-1-3":{"t":"Питамен хумус","l":"","p":1900,"ru":"Хумус с питой","lru":""},"0-4-0":{"t":"Адас (жасымық сорпасы)","l":"","p":1600,"ru":"Адас (чечевичный суп)","lru":""},"0-5-0":{"t":"Фатуш","l":"","p":1900,"ru":"Фатуш","lru":""},"0-5-2":{"t":"Балғын тілімдер","l":"","p":2400,"ru":"Свежая нарезка","lru":""},"0-5-1":{"t":"Асқабақ пен қызылша салаты","l":"","p":2400,"ru":"Салат с тыквой и свёклой","lru":""},"0-5-3":{"t":"Тауық еті мен саңырауқұлақ салаты","l":"","p":2700,"ru":"Салат с курицей и грибами","lru":""},"0-5-4":{"t":"Глазурьленген баклажан мен фета салаты","l":"","p":3100,"ru":"Салат с глазированным баклажаном и фетой","lru":""},"0-7-0":{"t":"Дәмдеуішті күріш","l":"","p":800,"ru":"Рис пряный","lru":""},"0-7-1":{"t":"Фри картобы","l":"","p":950,"ru":"Картофель фри","lru":""},"0-7-2":{"t":"Айдахо картобы","l":"","p":890,"ru":"Картофель Айдахо","lru":""},"0-7-3":{"t":"Картоп пюресі","l":"","p":600,"ru":"Картофельное пюре","lru":""},"0-2-0":{"t":"Тауық филесі мен «айоли» соусы қосылған пита","l":"","p":2500,"ru":"Пита с куриным филе и соусом «айоли»","lru":""},"0-2-2":{"t":"Жұлынған ет қосылған пита","l":"","p":3190,"ru":"Пита с рваным мясом","lru":""},"0-2-1":{"t":"Тауық етімен чапати","l":"","p":1800,"ru":"Чапати с курицей","lru":""},"0-2-3":{"t":"Жұмыртқамен чапати","l":"","p":1500,"ru":"Чапати с яйцом","lru":""},"0-2-4":{"t":"Кутаб","l":"","p":1500,"ru":"Кутабы","lru":""},"0-3-4":{"t":"Ауылша таңғы ас","l":"","p":3500,"ru":"Деревенский завтрак","lru":""},"0-3-2":{"t":"Хашбраунмен скрэмбл","l":"","p":3500,"ru":"Скрэмбл с хашбрауном","lru":""},"0-3-5":{"t":"Тауық етімен сэндвич","l":"","p":2500,"ru":"Сэндвич с курицей","lru":""},"0-3-0":{"t":"Тальбина ботқасы","l":"","p":1500,"ru":"Каша Тальбина","lru":""},"0-3-1":{"t":"Пеште пісірілген асқабақ қосылған күріш ботқасы","l":"","p":1500,"ru":"Каша рисовая с запечённой тыквой","lru":""},"0-3-3":{"t":"«Бес дән» ботқасы","l":"","p":1500,"ru":"Каша «Пять злаков»","lru":""},"2-0-4":{"t":"Фирмалық карак шай","l":"S","p":950,"ru":"Фирменный карак чай","lru":"S"},"2-0-3":{"t":"Фирмалық карак шай","l":"M","p":1250,"ru":"Фирменный карак чай","lru":"M"},"2-0-0":{"t":"Фирмалық карак шай","l":"топқа","p":3800,"ru":"Фирменный карак чай","lru":"на компанию"},"2-0-1":{"t":"Магриби","l":"S","p":850,"ru":"Магриби","lru":"S"},"2-0-2":{"t":"Магриби","l":"M","p":1050,"ru":"Магриби","lru":"M"},"1-4-1":{"t":"Құлпынайлы лимонад","l":"0,5 л","p":1390,"ru":"Клубничный лимонад","lru":"0,5 л"},"1-4-0":{"t":"Құлпынайлы лимонад","l":"1 л","p":2790,"ru":"Клубничный лимонад","lru":"1 л"},"1-4-3":{"t":"Жидек миксі","l":"0,5 л","p":1390,"ru":"Ягодный микс","lru":"0,5 л"},"1-4-2":{"t":"Жидек миксі","l":"1 л","p":2790,"ru":"Ягодный микс","lru":"1 л"},"1-4-5":{"t":"Алмұртты лимонад","l":"0,5 л","p":1390,"ru":"Грушевый лимонад","lru":"0,5 л"},"1-4-4":{"t":"Алмұртты лимонад","l":"1 л","p":2790,"ru":"Грушевый лимонад","lru":"1 л"},"1-4-7":{"t":"Цитрусты лимонад","l":"0,5 л","p":1390,"ru":"Цитрусовый лимонад","lru":"0,5 л"},"1-4-6":{"t":"Цитрусты лимонад","l":"1 л","p":2790,"ru":"Цитрусовый лимонад","lru":"1 л"},"1-4-8":{"t":"Киви-алоэ лимонады","l":"0,5 л","p":1590,"ru":"Лимонад киви-алоэ","lru":"0,5 л"},"1-4-9":{"t":"Киви-алоэ лимонады","l":"1 л","p":2990,"ru":"Лимонад киви-алоэ","lru":"1 л"},"1-3-9":{"t":"Үй лимонады","l":"0,3 л","p":700,"ru":"Домашний лимонад","lru":"0,3 л"},"1-3-10":{"t":"Үй лимонады","l":"0,5 л","p":1200,"ru":"Домашний лимонад","lru":"0,5 л"},"1-3-11":{"t":"Үй лимонады","l":"1 л","p":2400,"ru":"Домашний лимонад","lru":"1 л"},"1-3-6":{"t":"Жидекті морс","l":"1 л","p":1890,"ru":"Морс ягодный","lru":"1 л"},"1-1-0":{"t":"Шырғанақты шай","l":"0,3 л","p":980,"ru":"Облепиховый чай","lru":"0,3 л"},"1-0-0":{"t":"Шырғанақты шай","l":"үлкен","p":2190,"ru":"Облепиховый чай","lru":"большой"},"1-0-1":{"t":"Жебір қосылған шиелі шай","l":"үлкен","p":2190,"ru":"Вишнёвый чай с чабрецом","lru":"большой"},"1-0-2":{"t":"Бөріқарақат қосылған Судан шайы","l":"үлкен","p":2190,"ru":"Суданский чай с барбарисом","lru":"большой"},"1-0-3":{"t":"Маракуйя қосылған цитрусты шай","l":"үлкен","p":2190,"ru":"Цитрусовый чай с маракуйей","lru":"большой"},"1-0-4":{"t":"Марокко шайы","l":"үлкен","p":2190,"ru":"Марокканский чай","lru":"большой"},"1-0-5":{"t":"Зімбір қосылған мүкжидекті шай","l":"үлкен","p":2190,"ru":"Клюквенный чай с имбирём","lru":"большой"},"1-1-1":{"t":"Таңқурай-манго","l":"0,3 л","p":980,"ru":"Малина-манго","lru":"0,3 л"},"1-1-2":{"t":"Қаражидек-зімбір","l":"0,3 л","p":980,"ru":"Черника-имбирь","lru":"0,3 л"},"1-1-3":{"t":"Ежевика-қалампыр","l":"0,3 л","p":980,"ru":"Ежевика-гвоздика","lru":"0,3 л"},"1-1-4":{"t":"Алмұрт-жебір","l":"0,3 л","p":980,"ru":"Груша-чабрец","lru":"0,3 л"},"1-2-0":{"t":"Эспрессо","l":"","p":590,"ru":"Эспрессо","lru":""},"1-2-3":{"t":"Американо","l":"S","p":890,"ru":"Американо","lru":"S"},"1-2-4":{"t":"Американо","l":"M","p":990,"ru":"Американо","lru":"M"},"1-2-1":{"t":"Капучино","l":"S","p":980,"ru":"Капучино","lru":"S"},"1-2-2":{"t":"Капучино","l":"M","p":1290,"ru":"Капучино","lru":"M"},"1-2-5":{"t":"Латте","l":"M","p":1290,"ru":"Латте","lru":"M"},"1-2-6":{"t":"Флэт уайт","l":"","p":1390,"ru":"Флэт уайт","lru":""},"1-2-7":{"t":"Раф кофе","l":"","p":1690,"ru":"Раф кофе","lru":""},"1-7-0":{"t":"Айс латте","l":"0,3 л","p":1490,"ru":"Айс латте","lru":"0,3 л"},"1-7-1":{"t":"Айс капучино","l":"0,3 л","p":1490,"ru":"Айс капучино","lru":"0,3 л"},"1-7-2":{"t":"Бамбл кофе","l":"0,3 л","p":2700,"ru":"Бамбл кофе","lru":"0,3 л"},"1-7-3":{"t":"Колд макадамия","l":"0,3 л","p":1590,"ru":"Колд макадамия","lru":"0,3 л"},"1-3-0":{"t":"Айс матча манго","l":"0,4 л","p":1690,"ru":"Айс матча манго","lru":"0,4 л"},"1-3-4":{"t":"Айс блю матча карамель","l":"0,4 л","p":1690,"ru":"Айс блю матча карамель","lru":"0,4 л"},"1-3-2":{"t":"Тайша айс-ти","l":"0,4 л","p":1390,"ru":"Тайский айс-ти","lru":"0,4 л"},"1-3-3":{"t":"Цитрусты айс-ти","l":"0,4 л","p":1190,"ru":"Цитрусовый айс-ти","lru":"0,4 л"},"1-3-5":{"t":"Айс-ти жасмин-құлпынай","l":"0,4 л","p":1190,"ru":"Айс-ти жасмин-клубника","lru":"0,4 л"},"1-3-8":{"t":"Ежевикалы айс-ти","l":"0,4 л","p":1290,"ru":"Ежевичный айс-ти","lru":"0,4 л"},"1-3-1":{"t":"Апельсин фреші","l":"0,25 л","p":2100,"ru":"Апельсиновый фреш","lru":"0,25 л"},"1-3-7":{"t":"Какао","l":"","p":900,"ru":"Какао","lru":""},"1-6-0":{"t":"Қаражидекті смузи","l":"0,4 л","p":1990,"ru":"Черничный смузи","lru":"0,4 л"},"1-6-1":{"t":"Жидекті смузи","l":"0,4 л","p":1990,"ru":"Ягодный смузи","lru":"0,4 л"},"1-6-4":{"t":"Киви-құрмалы смузи","l":"0,3 л","p":1990,"ru":"Смузи киви-финики","lru":"0,3 л"},"1-6-2":{"t":"Ванильді милкшейк","l":"0,3 л","p":1590,"ru":"Ванильный милкшейк","lru":"0,3 л"},"1-6-3":{"t":"Құлпынайлы милкшейк","l":"0,3 л","p":1590,"ru":"Клубничный милкшейк","lru":"0,3 л"},"1-6-5":{"t":"Құрмалы милкшейк","l":"","p":1900,"ru":"Финиковый милкшейк","lru":""},"1-5-3":{"t":"Ассам","l":"","p":1200,"ru":"Ассам","lru":""},"1-5-2":{"t":"Эрл грей","l":"","p":1500,"ru":"Эрл грей","lru":""},"1-5-0":{"t":"Сүтті улун","l":"","p":1500,"ru":"Молочный улун","lru":""},"1-5-1":{"t":"Те гуань инь","l":"","p":1500,"ru":"Те гуань инь","lru":""},"1-5-4":{"t":"Тары шай","l":"","p":2400,"ru":"Тары чай","lru":""},"1-8-0":{"t":"Мекка cola","l":"","p":1050,"ru":"Мекка cola","lru":""},"1-8-1":{"t":"Milaf cola","l":"","p":1050,"ru":"Milaf cola","lru":""},"1-8-2":{"t":"Kinza (түрлері бар)","l":"","p":1050,"ru":"Kinza в ассортименте","lru":""},"1-9-4":{"t":"Швепс","l":"","p":1200,"ru":"Швепс","lru":""},"1-9-0":{"t":"Таңқурайлы тоник","l":"","p":2280,"ru":"Малиновый тоник","lru":""},"1-9-1":{"t":"Цитрусты тоник","l":"","p":2280,"ru":"Цитрусовый тоник","lru":""},"1-9-2":{"t":"Жидекті тоник","l":"","p":2280,"ru":"Ягодный тоник","lru":""},"1-9-3":{"t":"Батч-брю тоник","l":"","p":2280,"ru":"Батч-брю тоник","lru":""},"3-0-2":{"t":"Пістелі рулет","l":"","p":2500,"ru":"Фисташковый рулет","lru":""},"3-0-1":{"t":"Испанша чизкейк","l":"","p":2000,"ru":"Чизкейк испанский","lru":""},"3-0-3":{"t":"Тары чизкейк","l":"","p":2000,"ru":"Чизкейк тары","lru":""},"3-0-4":{"t":"Наполеон","l":"","p":2200,"ru":"Наполеон","lru":""},"3-0-5":{"t":"Медовик","l":"","p":1900,"ru":"Медовик","lru":""},"3-0-8":{"t":"Шайға арналған жаңғақ пен кептірілген жеміс ассортиі","l":"","p":3000,"ru":"Чайное ассорти из орехов и сухофруктов","lru":""},"3-0-0":{"t":"Шоколадтағы құрма","l":"","p":800,"ru":"Финики в шоколаде","lru":""},"3-0-6":{"t":"Қоюлатылған сүт салынған орешек","l":"","p":350,"ru":"Орешек со сгущёнкой","lru":""},"3-0-9":{"t":"Жент","l":"","p":350,"ru":"Жент","lru":""},"3-0-7":{"t":"Қайнатылған қоюлатылған сүт салынған вафли түтікшесі","l":"","p":0,"ru":"Вафельная трубочка с варёной сгущёнкой","lru":""}},"cook":{"барбекю":"барбекю","фрай":"қуырылған"}}</script>
+<script src="../src/app.js" defer></script>
+</body>
+</html>

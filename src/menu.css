@@ -1,0 +1,144 @@
+/* Mandi Center — раскладка страницы меню. Только токены из tokens.css и компоненты из components.css. */
+
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h, 0px) + var(--space-4)); }
+body { overflow-x: clip; }
+body.has-list { padding-bottom: calc(var(--control-h-lg) + var(--space-8) + env(safe-area-inset-bottom)); }
+html:has(body.has-list) { scroll-padding-bottom: calc(var(--control-h-lg) + var(--space-8) + env(safe-area-inset-bottom)); }
+
+/* ───────── Шапка ───────── */
+.masthead .topbar__tools { margin-right: calc(-1 * var(--space-2)); }
+.icon-btn .i-moon { display: none; }
+[data-theme="light"] .icon-btn .i-sun { display: none; }
+[data-theme="light"] .icon-btn .i-moon { display: block; }
+.intro { padding: var(--space-1) 0 var(--space-4); }
+.intro__title { font: var(--weight-medium) var(--text-lg) / var(--leading-snug) var(--font-serif); letter-spacing: var(--tracking-display); text-wrap: balance; }
+.intro__facts { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); margin-top: var(--space-2); }
+.intro__facts > span + span { padding-left: var(--space-3); border-left: var(--border-hair) solid var(--color-border-strong); }
+.intro .status { margin-top: var(--space-1); }
+
+/* ───────── Навигация и поиск ───────── */
+.nav .container { display: grid; }
+.chips[hidden] { display: none; }
+.chips { margin-inline: calc(-1 * var(--grid-margin)); padding-inline: calc(var(--grid-margin) - var(--space-3)) var(--grid-margin); scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.search { padding-block: var(--space-3) var(--space-2); }
+.search[hidden] { display: none; }
+.search__row { display: flex; align-items: center; gap: var(--space-2); }
+.search__row .field__control { flex: 1; }
+.search__result { min-height: var(--space-6); padding-top: var(--space-1); }
+.is-searching .chips, .is-searching .tabs { display: none; }
+
+/* ───────── Разделы и категории ───────── */
+main { padding-bottom: var(--space-12); }
+.sec { padding-top: var(--space-16); }
+.sec:first-child { padding-top: var(--space-6); }
+.sec[hidden], .cat[hidden], .item[hidden], .dish[hidden] { display: none; }
+.sec__title { margin-bottom: var(--space-8); padding-bottom: var(--space-4); border-bottom: var(--border-hair) solid var(--color-border); }
+.cats { display: grid; gap: var(--space-12); }
+.cat__head { margin-bottom: var(--space-5); }
+.cat__sub { margin-top: var(--space-1); }
+.cat__lead { margin-top: var(--space-2); }
+.items { display: grid; gap: var(--space-6); }
+.item .opts { margin-top: var(--space-3); }
+.item .t-desc, .item .item__more { margin-top: var(--space-1); }
+.item__more { display: flex; }
+.t-desc .text-btn { margin-left: var(--space-1); vertical-align: baseline; margin-block: calc(var(--space-3) * -1); }
+.item .line .t-price, .dish__sum .t-price-lg { text-align: right; }
+.item__title { text-wrap: pretty; }
+.pick { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-2) var(--space-3); margin-top: var(--space-2); }
+.pick .opt { max-width: 100%; flex-wrap: wrap; }
+.item .pick .opts { margin-top: 0; flex: 1; min-width: 0; }
+.item.is-oos .line__name { color: var(--color-text-muted); }
+.line--oos { grid-template-columns: minmax(0, 1fr) auto; }
+.item .oos { margin-top: var(--space-1); }
+
+
+
+/* ───────── Манди ───────── */
+.mandi { display: grid; gap: var(--space-6); }
+.mandi > *, .cats > *, .dishes > *, .items > *, .portion { min-width: 0; }
+.mandi__photo { margin: 0; }
+.mandi__photo img { width: 100%; aspect-ratio: 5 / 2; object-fit: cover; object-position: 50% 40%; border-radius: var(--radius-md); background: var(--color-surface); }
+.mandi__head { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: var(--space-3); margin-top: var(--space-4); }
+.mandi__sub { font: italic var(--weight-regular) var(--text-md) / var(--leading-snug) var(--font-serif); color: var(--color-text-muted); }
+.mandi__lead { margin-top: var(--space-2); }
+.mandi .seg { margin-top: var(--space-4); }
+.mandi .story { margin-top: var(--space-2); }
+.mandi .story p { margin-top: var(--space-1); }
+.dishes { display: grid; }
+.cat--mandi + .cats, .cat--feature + .cats { margin-top: var(--space-16); }
+.mandi__photo img { object-position: 50% 40%; }
+.mandi__photo--pour img { object-position: 50% 35%; }
+.dish { padding-block: var(--space-6); border-top: var(--border-hair) solid var(--color-border); }
+.dish:first-child { border-top: 0; padding-top: 0; }
+.dish__head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); }
+.dish__title { font: var(--weight-semibold) var(--text-xl) / var(--leading-tight) var(--font-serif); letter-spacing: var(--tracking-display); text-wrap: balance; }
+.dish .portions { margin-top: var(--space-4); }
+.cook { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); margin-top: var(--space-3); }
+.dish__note { margin-top: var(--space-2); }
+.dish__note[hidden] { display: none; }
+.dish .t-desc { margin-top: var(--space-3); }
+.dish__sum { margin-top: var(--space-3); }
+
+/* Допы и «С манди берут» */
+.pairing { margin-top: var(--space-2); }
+.pairing .items { margin-top: var(--space-4); gap: var(--space-4); }
+.pairing__sub { margin-top: var(--space-1); }
+
+/* ───────── О ресторане и подвал ───────── */
+.about { padding-top: var(--space-16); }
+.about .panel { display: grid; gap: var(--space-3); }
+.about .panel > * { min-width: 0; }
+.about__links { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-2); }
+.foot { padding-block: var(--space-10) var(--space-8); }
+.foot .container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2); }
+
+/* ───────── Полоса «Мой список» ───────── */
+.listbar[hidden] { display: none; }
+.listbar__sum { display: flex; flex-wrap: wrap; column-gap: var(--space-2); }
+.listbar__sum > span + span { padding-left: var(--space-2); border-left: var(--border-hair) solid var(--color-border-strong); }
+
+/* ───────── Экран официанта ───────── */
+.waiter__title { margin-top: var(--space-6); }
+.waiter__note { margin-top: var(--space-6); color: var(--color-text-muted); }
+.is-searching .pairing, .is-searching .story, .is-searching .mandi__photo, .is-searching .seg { display: none; }
+
+/* ───────── Планшет ───────── */
+@media (min-width: 768px) {
+  .intro__title { font-size: var(--text-xl); }
+  .dish__title { font-size: var(--text-2xl); }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mandi__aside { display: grid; grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr)); column-gap: var(--grid-gutter); align-items: start; }
+  .mandi__aside > * { grid-column: 7 / -1; }
+  .mandi__aside > .mandi__photo { grid-column: 1 / 7; grid-row: 1 / span 4; }
+  .mandi__photo img { aspect-ratio: 6 / 5; object-position: 50% 0; }
+  .mandi__head { margin-top: 0; }
+}
+
+/* ───────── Десктоп: разворот печатного меню ───────── */
+@media (min-width: 1024px) {
+  .intro { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: var(--grid-gutter); align-items: end; }
+  .intro__meta { justify-self: end; text-align: right; }
+  .intro__facts { justify-content: flex-end; }
+  .intro .status { justify-content: flex-end; width: 100%; }
+  .mandi { grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr)); column-gap: var(--grid-gutter); }
+  .mandi__aside { grid-column: span 5; position: sticky; top: calc(var(--nav-h, 0px) + var(--space-6)); align-self: start; }
+  .dishes { grid-column: span 7; }
+  .mandi__photo img { aspect-ratio: 4 / 3; }
+  .cats { display: block; columns: 2; column-gap: calc(var(--grid-gutter) * 3); }
+  .cats > .cat { break-inside: avoid; margin-bottom: var(--space-12); }
+  .about .panel { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: var(--grid-gutter); align-items: start; }
+  .about__links { grid-column: 2; grid-row: 1 / span 5; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; margin-top: 0; }
+}
+
+/* ───────── Телефон: вырезы экрана и альбомная ориентация ───────── */
+@supports (padding: max(1px)) {
+  .container { padding-left: max(var(--grid-margin), env(safe-area-inset-left)); padding-right: max(var(--grid-margin), env(safe-area-inset-right)); }
+}
+@media (max-height: 480px) and (orientation: landscape) {
+  .listbar { padding-block: var(--space-2) calc(var(--space-2) + env(safe-area-inset-bottom)); }
+  .listbar .btn { min-height: var(--tap-min); }
+  .intro { padding-bottom: var(--space-2); }
+  .mandi__photo img { aspect-ratio: 3 / 1; }
+}

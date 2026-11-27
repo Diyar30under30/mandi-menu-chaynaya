@@ -1,0 +1,2961 @@
+{
+  "meta": {
+    "brand": "Mandi Center",
+    "tagline": "Единственный Манди Центр в Астане",
+    "cuisine": "Арабская (йеменская) кухня",
+    "halalNote": "Халяльная кухня",
+    "address": "Астана, ул. Максута Нарикбаева, 5",
+    "hours": "Ежедневно, 11:00–01:00",
+    "links": {
+      "phone": "+77782453572",
+      "whatsapp": "https://api.whatsapp.com/send?phone=77782453572",
+      "instagram": "https://www.instagram.com/mandi_center.kz",
+      "twogis": "https://go.2gis.com/jdbi8"
+    },
+    "currency": "KZT",
+    "priceFormat": "3 800 ₸",
+    "source": "menu_data.json (снято с https://mandicenter.netlify.app/ 2026-11-26)",
+    "rules": [
+      "Цены, состав и порции не изменены: price совпадает с исходным числом (или null).",
+      "variant — исходный текст варианта без изменений; label — подпись для гостя.",
+      "name — приведённое название (все изменения записаны в changes.md); nameOriginal — исходное.",
+      "perPerson считается как price / persons и округляется до тенге; perPersonVs.pct — разница с ценой за персону у меньшей порции той же карточки."
+    ]
+  },
+  "recommendedCards": [
+    "mandi-chicken",
+    "mandi-lamb",
+    "karak-tea"
+  ],
+  "sections": [
+    {
+      "id": "kitchen",
+      "label": "Кухня",
+      "labelOriginal": [
+        "Основное меню"
+      ],
+      "categories": [
+        {
+          "id": "mandi",
+          "label": "Манди",
+          "chip": "Манди",
+          "labelOriginal": [
+            "Фирменное блюдо на компанию"
+          ],
+          "layout": "feature",
+          "subtitle": "на 1, 2 и 5 персон",
+          "lead": "Блюдо из Йемена: ароматный рис со специями и мясо, томлённое до мягкости",
+          "descriptionFull": "Манди — традиционное блюдо из Йемена: ароматный рис, специи и мясо (чаще курица или баранина), томлённое до мягкости. Рис пропитывается мясным соком, блюдо подаётся на большом подносе с соусами.",
+          "cover": "images/cover-main-signature.jpg",
+          "cards": [
+            {
+              "id": "mandi-chicken",
+              "title": "Манди с курицей",
+              "desc": "Курица, томлённая до мягкости, на ароматном рисе со специями, пропитанном мясным соком",
+              "descOriginal": [],
+              "photo": "images/item-0-0-0.jpg",
+              "options": [
+                {
+                  "key": "0-0-0",
+                  "name": "Манди с курицей",
+                  "variant": "на одну персону",
+                  "label": "1 персона",
+                  "price": 3800,
+                  "priceText": "3 800 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-0.jpg",
+                  "nameOriginal": "Манди с курицей",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 1
+                },
+                {
+                  "key": "0-0-1",
+                  "name": "Манди с курицей",
+                  "variant": "на 2 персоны",
+                  "label": "2 персоны",
+                  "price": 7500,
+                  "priceText": "7 500 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-1.jpg",
+                  "nameOriginal": "Манди с курицей",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 2,
+                  "perPerson": 3750,
+                  "perPersonVs": {
+                    "baseKey": "0-0-0",
+                    "baseLabel": "1 персона",
+                    "basePersons": 1,
+                    "pct": 1
+                  }
+                },
+                {
+                  "key": "0-0-2",
+                  "name": "Манди с курицей",
+                  "variant": "на 5 персон",
+                  "label": "5 персон",
+                  "price": 16000,
+                  "priceText": "16 000 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-2.jpg",
+                  "nameOriginal": "Манди с курицей",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 5,
+                  "perPerson": 3200,
+                  "perPersonVs": {
+                    "baseKey": "0-0-0",
+                    "baseLabel": "1 персона",
+                    "basePersons": 1,
+                    "pct": 16
+                  }
+                }
+              ],
+              "badge": "Рекомендуем",
+              "upsellKeys": [
+                "0-8-0",
+                "0-8-1",
+                "0-8-7",
+                "0-8-4"
+              ]
+            },
+            {
+              "id": "mandi-lamb",
+              "title": "Манди с бараниной",
+              "desc": "Баранина, томлённая до мягкости, на ароматном рисе со специями, пропитанном мясным соком",
+              "descOriginal": [],
+              "photo": "images/item-0-0-3.jpg",
+              "options": [
+                {
+                  "key": "0-0-3",
+                  "name": "Манди с бараниной",
+                  "variant": "на одну персону",
+                  "label": "1 персона",
+                  "price": 8690,
+                  "priceText": "8 690 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-3.jpg",
+                  "nameOriginal": "Манди с бараниной",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 1
+                },
+                {
+                  "key": "0-0-4",
+                  "name": "Манди с бараниной",
+                  "variant": "на 2 персоны",
+                  "label": "2 персоны",
+                  "price": 15290,
+                  "priceText": "15 290 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-4.jpg",
+                  "nameOriginal": "Манди с бараниной",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 2,
+                  "perPerson": 7645,
+                  "perPersonVs": {
+                    "baseKey": "0-0-3",
+                    "baseLabel": "1 персона",
+                    "basePersons": 1,
+                    "pct": 12
+                  }
+                },
+                {
+                  "key": "0-0-5",
+                  "name": "Манди с бараниной",
+                  "variant": "на 5 персон",
+                  "label": "5 персон",
+                  "price": 26290,
+                  "priceText": "26 290 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-5.jpg",
+                  "nameOriginal": "Манди с бараниной",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 5,
+                  "perPerson": 5258,
+                  "perPersonVs": {
+                    "baseKey": "0-0-3",
+                    "baseLabel": "1 персона",
+                    "basePersons": 1,
+                    "pct": 39
+                  }
+                }
+              ],
+              "badge": "Рекомендуем",
+              "upsellKeys": [
+                "0-8-0",
+                "0-8-1",
+                "0-8-7",
+                "0-8-6"
+              ]
+            },
+            {
+              "id": "mandi-assorti",
+              "title": "Манди ассорти",
+              "desc": "Ассорти мяса на ароматном рисе со специями, пропитанном мясным соком",
+              "descOriginal": [],
+              "photo": "images/item-0-0-6.jpg",
+              "options": [
+                {
+                  "key": "0-0-6",
+                  "name": "Манди ассорти",
+                  "variant": "на 2 персоны",
+                  "label": "2 персоны",
+                  "price": 13530,
+                  "priceText": "13 530 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-6.jpg",
+                  "nameOriginal": "Манди ассорти",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 2,
+                  "perPerson": 6765
+                },
+                {
+                  "key": "0-0-7",
+                  "name": "Манди ассорти",
+                  "variant": "на 5 персон",
+                  "label": "5 персон",
+                  "price": 21990,
+                  "priceText": "21 990 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-7.jpg",
+                  "nameOriginal": "Манди ассорти",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 5,
+                  "perPerson": 4398,
+                  "perPersonVs": {
+                    "baseKey": "0-0-6",
+                    "baseLabel": "2 персоны",
+                    "basePersons": 2,
+                    "pct": 35
+                  }
+                }
+              ],
+              "upsellKeys": [
+                "0-8-0",
+                "0-8-1",
+                "0-8-7"
+              ]
+            },
+            {
+              "id": "mandi-bbq",
+              "title": "Манди с курицей барбекю",
+              "desc": "Курица барбекю на ароматном рисе со специями, пропитанном мясным соком",
+              "descOriginal": [],
+              "photo": "images/item-0-0-10.jpg",
+              "options": [
+                {
+                  "key": "0-0-10",
+                  "name": "Манди с курицей барбекю",
+                  "variant": "на 1 персону",
+                  "label": "1 персона",
+                  "price": 4000,
+                  "priceText": "4 000 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-10.jpg",
+                  "nameOriginal": "Манди с курицей BBQ",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 1
+                },
+                {
+                  "key": "0-0-11",
+                  "name": "Манди с курицей барбекю",
+                  "variant": "на 2 персоны",
+                  "label": "2 персоны",
+                  "price": 8500,
+                  "priceText": "8 500 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-11.jpg",
+                  "nameOriginal": "Манди с курицей BBQ",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 2,
+                  "perPerson": 4250,
+                  "perPersonVs": {
+                    "baseKey": "0-0-10",
+                    "baseLabel": "1 персона",
+                    "basePersons": 1,
+                    "pct": -6
+                  }
+                },
+                {
+                  "key": "0-0-12",
+                  "name": "Манди с курицей барбекю",
+                  "variant": "на 5 персон",
+                  "label": "5 персон",
+                  "price": 17000,
+                  "priceText": "17 000 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-12.jpg",
+                  "nameOriginal": "Манди с курицей BBQ",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 5,
+                  "perPerson": 3400,
+                  "perPersonVs": {
+                    "baseKey": "0-0-10",
+                    "baseLabel": "1 персона",
+                    "basePersons": 1,
+                    "pct": 15
+                  }
+                }
+              ],
+              "upsellKeys": [
+                "0-8-0",
+                "0-8-1",
+                "0-8-7",
+                "0-8-5"
+              ]
+            },
+            {
+              "id": "mandi-sudak",
+              "title": "Манди с судаком",
+              "desc": "Судак барбекю или фрай на ароматном рисе со специями",
+              "descOriginal": [],
+              "photo": "images/item-0-0-8.jpg",
+              "options": [
+                {
+                  "key": "0-0-8",
+                  "name": "Манди с судаком",
+                  "variant": "",
+                  "label": "1 порция",
+                  "price": 4000,
+                  "priceText": "4 000 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-8.jpg",
+                  "nameOriginal": "Манди Судак BBQ / Фрай",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "cookingOptions": [
+                    "барбекю",
+                    "фрай"
+                  ],
+                  "cookingNote": "Способ выбирается в карточке и попадает в заказ как пометка; отдельной позиции в кассе нет (вопрос В4)"
+                },
+                {
+                  "key": "0-0-9",
+                  "name": "Манди с судаком",
+                  "variant": "на 2 персоны",
+                  "label": "2 персоны",
+                  "price": 8500,
+                  "priceText": "8 500 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-0-9.jpg",
+                  "nameOriginal": "Манди Судак",
+                  "categoryOriginal": "Основное меню / Фирменное блюдо на компанию",
+                  "persons": 2,
+                  "perPerson": 4250,
+                  "cookingOptions": [
+                    "барбекю",
+                    "фрай"
+                  ]
+                }
+              ],
+              "hint": "Барбекю или фрай — скажите официанту, когда будете заказывать.",
+              "upsellKeys": [
+                "0-8-0",
+                "0-8-1",
+                "0-8-7",
+                "0-8-2",
+                "0-8-3"
+              ]
+            }
+          ],
+          "pairing": {
+            "title": "С манди берут",
+            "subtitle": "Напиток и сладкое на компанию",
+            "keys": [
+              "2-0-0",
+              "1-4-0",
+              "1-3-11",
+              "3-0-8"
+            ]
+          }
+        },
+        {
+          "id": "addons",
+          "label": "Добавить к манди",
+          "chip": "Допы к манди",
+          "labelOriginal": [
+            "Допы к Манди"
+          ],
+          "layout": "list",
+          "lead": "Дополнительно к подаче манди: соусы, лепёшка и мясо.",
+          "cards": [
+            {
+              "id": "i-0-8-0",
+              "title": "Белый соус",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-8-0",
+                  "name": "Белый соус",
+                  "variant": "",
+                  "label": "",
+                  "price": 300,
+                  "priceText": "300 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Белый соус",
+                  "categoryOriginal": "Основное меню / Допы к Манди"
+                }
+              ]
+            },
+            {
+              "id": "i-0-8-1",
+              "title": "Красный соус",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-8-1",
+                  "name": "Красный соус",
+                  "variant": "",
+                  "label": "",
+                  "price": 300,
+                  "priceText": "300 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Красный соус",
+                  "categoryOriginal": "Основное меню / Допы к Манди"
+                }
+              ]
+            },
+            {
+              "id": "i-0-8-7",
+              "title": "Лепёшка пита",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-8-7",
+                  "name": "Лепёшка пита",
+                  "variant": "",
+                  "label": "",
+                  "price": 490,
+                  "priceText": "490 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Пита лепёшка",
+                  "categoryOriginal": "Основное меню / Допы к Манди"
+                }
+              ]
+            },
+            {
+              "id": "i-0-8-4",
+              "title": "Курица",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-8-4",
+                  "name": "Курица",
+                  "variant": "",
+                  "label": "",
+                  "price": 1650,
+                  "priceText": "1 650 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Курица",
+                  "categoryOriginal": "Основное меню / Допы к Манди"
+                }
+              ]
+            },
+            {
+              "id": "i-0-8-5",
+              "title": "Курица барбекю",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-8-5",
+                  "name": "Курица барбекю",
+                  "variant": "",
+                  "label": "",
+                  "price": 2175,
+                  "priceText": "2 175 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Курица BBQ",
+                  "categoryOriginal": "Основное меню / Допы к Манди"
+                }
+              ]
+            },
+            {
+              "id": "i-0-8-2",
+              "title": "Судак барбекю",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-8-2",
+                  "name": "Судак барбекю",
+                  "variant": "",
+                  "label": "",
+                  "price": 2175,
+                  "priceText": "2 175 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Судак BBQ",
+                  "categoryOriginal": "Основное меню / Допы к Манди"
+                }
+              ]
+            },
+            {
+              "id": "i-0-8-3",
+              "title": "Судак фрай",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-8-3",
+                  "name": "Судак фрай",
+                  "variant": "",
+                  "label": "",
+                  "price": 2175,
+                  "priceText": "2 175 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Судак фрай",
+                  "categoryOriginal": "Основное меню / Допы к Манди"
+                }
+              ]
+            },
+            {
+              "id": "i-0-8-6",
+              "title": "Баранина",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-8-6",
+                  "name": "Баранина",
+                  "variant": "",
+                  "label": "",
+                  "price": 5900,
+                  "priceText": "5 900 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Баранина",
+                  "categoryOriginal": "Основное меню / Допы к Манди"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hot",
+          "label": "Горячие блюда",
+          "chip": "Горячее",
+          "labelOriginal": [
+            "Основные блюда",
+            "Very hot"
+          ],
+          "layout": "cards",
+          "cards": [
+            {
+              "id": "i-0-1-0",
+              "title": "Чапати с курицей в тарелке",
+              "desc": "Курица карри с пряным рисом, хумусом, овощным салатом и арабской лепёшкой пита",
+              "descOriginal": [
+                "Курица карри, арабская лепёшка пита, хумус, овощной салат, пряный рис"
+              ],
+              "photo": "images/item-0-1-0.jpg",
+              "options": [
+                {
+                  "key": "0-1-0",
+                  "name": "Чапати с курицей в тарелке",
+                  "variant": "",
+                  "label": "",
+                  "price": 3200,
+                  "priceText": "3 200 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-1-0.jpg",
+                  "nameOriginal": "Чаппати с курицей в тарелке",
+                  "categoryOriginal": "Основное меню / Основные блюда"
+                }
+              ]
+            },
+            {
+              "id": "i-0-6-0",
+              "title": "Баттер чикен масала",
+              "desc": "Филе курицы в сливочно-томатном соусе со специями, подаём с рисом",
+              "descOriginal": [
+                "Филе курицы, сливочно-томатный соус со специями, подаётся с рисом"
+              ],
+              "photo": "images/item-0-6-0.jpg",
+              "options": [
+                {
+                  "key": "0-6-0",
+                  "name": "Баттер чикен масала",
+                  "variant": "",
+                  "label": "",
+                  "price": 3600,
+                  "priceText": "3 600 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-6-0.jpg",
+                  "nameOriginal": "Butter chicken masala",
+                  "categoryOriginal": "Основное меню / Very hot"
+                }
+              ]
+            },
+            {
+              "id": "i-0-1-1",
+              "title": "Курица с грибами под сливочным соусом и пюре",
+              "desc": "Куриное филе, обжаренное с шампиньонами, в сливочном соусе. Подаём с пюре",
+              "descOriginal": [
+                "Куриное филе, обжаренное с шампиньонами под сливочным соусом, подаётся с пюре"
+              ],
+              "photo": "images/item-0-1-1.jpg",
+              "options": [
+                {
+                  "key": "0-1-1",
+                  "name": "Курица с грибами под сливочным соусом и пюре",
+                  "variant": "",
+                  "label": "",
+                  "price": 2800,
+                  "priceText": "2 800 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-1-1.jpg",
+                  "nameOriginal": "Курица с грибами под сливочным соусом и пюре",
+                  "categoryOriginal": "Основное меню / Основные блюда"
+                }
+              ]
+            },
+            {
+              "id": "i-0-1-2",
+              "title": "Паста с курицей и грибами",
+              "desc": "Тальятелли или лингвини в сливочном соусе с курицей и обжаренными грибами",
+              "descOriginal": [
+                "Тальятелли/лингвини в сливочном соусе с курицей и обжаренными грибами"
+              ],
+              "photo": "images/item-0-1-2.jpg",
+              "options": [
+                {
+                  "key": "0-1-2",
+                  "name": "Паста с курицей и грибами",
+                  "variant": "",
+                  "label": "",
+                  "price": 2900,
+                  "priceText": "2 900 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-1-2.jpg",
+                  "nameOriginal": "Паста с курицей и грибами",
+                  "categoryOriginal": "Основное меню / Основные блюда"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "starters",
+          "label": "Супы и закуски",
+          "chip": "Супы и закуски",
+          "labelOriginal": [
+            "Супы",
+            "Основные блюда"
+          ],
+          "layout": "cards",
+          "cards": [
+            {
+              "id": "i-0-1-3",
+              "title": "Хумус с питой",
+              "desc": "Пюре из нута с кунжутной пастой и оливковым маслом, подаём с лепёшкой пита",
+              "descOriginal": [
+                "Пюре из нута с кунжутной пастой и оливковым маслом, подаётся с лепёшкой пита"
+              ],
+              "photo": "images/item-0-1-3.jpg",
+              "options": [
+                {
+                  "key": "0-1-3",
+                  "name": "Хумус с питой",
+                  "variant": "",
+                  "label": "",
+                  "price": 1900,
+                  "priceText": "1 900 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-1-3.jpg",
+                  "nameOriginal": "Хумус с питой",
+                  "categoryOriginal": "Основное меню / Основные блюда"
+                }
+              ]
+            },
+            {
+              "id": "i-0-4-0",
+              "title": "Адас (чечевичный суп)",
+              "desc": "Крем-суп из красной чечевицы с насыщенным вкусом",
+              "descOriginal": [
+                "Крем-суп из красной чечевицы с насыщенным вкусом"
+              ],
+              "photo": "images/item-0-4-0.jpg",
+              "options": [
+                {
+                  "key": "0-4-0",
+                  "name": "Адас (чечевичный суп)",
+                  "variant": "",
+                  "label": "",
+                  "price": 1600,
+                  "priceText": "1 600 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-4-0.jpg",
+                  "nameOriginal": "Адас (чечевичный суп)",
+                  "categoryOriginal": "Основное меню / Супы"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "salads",
+          "label": "Салаты",
+          "chip": "Салаты",
+          "labelOriginal": [
+            "Салаты"
+          ],
+          "layout": "cards",
+          "cards": [
+            {
+              "id": "i-0-5-0",
+              "title": "Фатуш",
+              "desc": "Свежие овощи с медово-горчичной заправкой",
+              "descOriginal": [
+                "Свежие овощи, заправка медово-горчичная"
+              ],
+              "photo": "images/item-0-5-0.jpg",
+              "options": [
+                {
+                  "key": "0-5-0",
+                  "name": "Фатуш",
+                  "variant": "",
+                  "label": "",
+                  "price": 1900,
+                  "priceText": "1 900 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-5-0.jpg",
+                  "nameOriginal": "Фатош / Фатуш",
+                  "categoryOriginal": "Основное меню / Салаты"
+                }
+              ]
+            },
+            {
+              "id": "i-0-5-2",
+              "title": "Свежая нарезка",
+              "desc": "Помидоры, огурцы, редис, перец и зелень — кинза, укроп, петрушка. С хумусом",
+              "descOriginal": [
+                "Помидоры, огурцы, кинза, укроп, петрушка, перец, редис, хумус"
+              ],
+              "photo": "images/item-0-5-2.jpg",
+              "options": [
+                {
+                  "key": "0-5-2",
+                  "name": "Свежая нарезка",
+                  "variant": "",
+                  "label": "",
+                  "price": 2400,
+                  "priceText": "2 400 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-5-2.jpg",
+                  "nameOriginal": "Свежая нарезка",
+                  "categoryOriginal": "Основное меню / Салаты"
+                }
+              ]
+            },
+            {
+              "id": "i-0-5-1",
+              "title": "Салат с тыквой и свёклой",
+              "desc": "Тыква и свёкла с кремом из феты под медово-горчичным соусом",
+              "descOriginal": [
+                "С кремом из феты под медово-горчичным соусом"
+              ],
+              "photo": "images/item-0-5-1.jpg",
+              "options": [
+                {
+                  "key": "0-5-1",
+                  "name": "Салат с тыквой и свёклой",
+                  "variant": "",
+                  "label": "",
+                  "price": 2400,
+                  "priceText": "2 400 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-5-1.jpg",
+                  "nameOriginal": "Салат с тыквой и свёклой",
+                  "categoryOriginal": "Основное меню / Салаты"
+                }
+              ]
+            },
+            {
+              "id": "i-0-5-3",
+              "title": "Салат с курицей и грибами",
+              "desc": "Айсберг, куриное филе и яйцо под соусом айоли с карамелизованными шампиньонами",
+              "descOriginal": [
+                "Айсберг, куриное филе и яйцо под соусом айоли с карамелизованными шампиньонами"
+              ],
+              "photo": "images/item-0-5-3.jpg",
+              "options": [
+                {
+                  "key": "0-5-3",
+                  "name": "Салат с курицей и грибами",
+                  "variant": "",
+                  "label": "",
+                  "price": 2700,
+                  "priceText": "2 700 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-5-3.jpg",
+                  "nameOriginal": "Салат с цыплёнком и грибами",
+                  "categoryOriginal": "Основное меню / Салаты"
+                }
+              ]
+            },
+            {
+              "id": "i-0-5-4",
+              "title": "Салат с глазированным баклажаном и фетой",
+              "desc": "Обжаренный баклажан, фета, свежие овощи и ароматная заправка",
+              "descOriginal": [
+                "Обжаренный баклажан, свежие овощи, ароматная заправка"
+              ],
+              "photo": "images/item-0-5-4.jpg",
+              "options": [
+                {
+                  "key": "0-5-4",
+                  "name": "Салат с глазированным баклажаном и фетой",
+                  "variant": "",
+                  "label": "",
+                  "price": 3100,
+                  "priceText": "3 100 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-5-4.jpg",
+                  "nameOriginal": "Салат с баклажанами глейзи и фетой",
+                  "categoryOriginal": "Основное меню / Салаты"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sides",
+          "label": "Гарниры",
+          "chip": "Гарниры",
+          "labelOriginal": [
+            "Гарниры"
+          ],
+          "layout": "list",
+          "cards": [
+            {
+              "id": "i-0-7-0",
+              "title": "Рис пряный",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-7-0",
+                  "name": "Рис пряный",
+                  "variant": "",
+                  "label": "",
+                  "price": 800,
+                  "priceText": "800 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Рис пряный",
+                  "categoryOriginal": "Основное меню / Гарниры"
+                }
+              ]
+            },
+            {
+              "id": "i-0-7-1",
+              "title": "Картофель фри",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-7-1",
+                  "name": "Картофель фри",
+                  "variant": "",
+                  "label": "",
+                  "price": 950,
+                  "priceText": "950 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Картофель фри",
+                  "categoryOriginal": "Основное меню / Гарниры"
+                }
+              ]
+            },
+            {
+              "id": "i-0-7-2",
+              "title": "Картофель Айдахо",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-7-2",
+                  "name": "Картофель Айдахо",
+                  "variant": "",
+                  "label": "",
+                  "price": 890,
+                  "priceText": "890 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Картофель Айдахо",
+                  "categoryOriginal": "Основное меню / Гарниры"
+                }
+              ]
+            },
+            {
+              "id": "i-0-7-3",
+              "title": "Картофельное пюре",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-7-3",
+                  "name": "Картофельное пюре",
+                  "variant": "",
+                  "label": "",
+                  "price": 600,
+                  "priceText": "600 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Картофельное пюре",
+                  "categoryOriginal": "Основное меню / Гарниры"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pita",
+          "label": "Пита и чапати",
+          "chip": "Пита и чапати",
+          "labelOriginal": [
+            "Fast food"
+          ],
+          "layout": "cards",
+          "cards": [
+            {
+              "id": "i-0-2-0",
+              "title": "Пита с куриным филе и соусом «айоли»",
+              "desc": "Запечённое куриное филе со свежими овощами и соусом тартар",
+              "descOriginal": [
+                "Запечённое куриное филе со свежими овощами и соусом тартар"
+              ],
+              "photo": "images/item-0-2-0.jpg",
+              "options": [
+                {
+                  "key": "0-2-0",
+                  "name": "Пита с куриным филе и соусом «айоли»",
+                  "variant": "",
+                  "label": "",
+                  "price": 2500,
+                  "priceText": "2 500 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-2-0.jpg",
+                  "nameOriginal": "Пита с куриным филе и соусом «айоли»",
+                  "categoryOriginal": "Основное меню / Fast food"
+                }
+              ],
+              "needsOwnerAnswer": "В названии соус «айоли», в описании — «тартар». Оставлено как в оригинале до ответа владельца."
+            },
+            {
+              "id": "i-0-2-2",
+              "title": "Пита с рваным мясом",
+              "desc": "Томлёная говядина под соусом барбекю, томаты, огурцы и листья салата",
+              "descOriginal": [
+                "Говяжье томлёное мясо под соусом барбекю, томаты, огурцы, листья салата"
+              ],
+              "photo": "images/item-0-2-2.jpg",
+              "options": [
+                {
+                  "key": "0-2-2",
+                  "name": "Пита с рваным мясом",
+                  "variant": "",
+                  "label": "",
+                  "price": 3190,
+                  "priceText": "3 190 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-2-2.jpg",
+                  "nameOriginal": "Пита с рваным мясом",
+                  "categoryOriginal": "Основное меню / Fast food"
+                }
+              ]
+            },
+            {
+              "id": "i-0-2-1",
+              "title": "Чапати с курицей",
+              "desc": "Слоёная лепёшка с начинкой из курицы карри",
+              "descOriginal": [
+                "Лепёшка из слоёного теста с начинкой из курицы карри"
+              ],
+              "photo": "images/item-0-2-1.jpg",
+              "options": [
+                {
+                  "key": "0-2-1",
+                  "name": "Чапати с курицей",
+                  "variant": "",
+                  "label": "",
+                  "price": 1800,
+                  "priceText": "1 800 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-2-1.jpg",
+                  "nameOriginal": "Чапати с курицей",
+                  "categoryOriginal": "Основное меню / Fast food"
+                }
+              ]
+            },
+            {
+              "id": "i-0-2-3",
+              "title": "Чапати с яйцом",
+              "desc": "Слоёная лепёшка с яйцом, огурцом, помидором и листьями салата",
+              "descOriginal": [
+                "Слоёная лепёшка с начинкой из огурца, помидора, яйца и листьев салата"
+              ],
+              "photo": "images/item-0-2-3.jpg",
+              "options": [
+                {
+                  "key": "0-2-3",
+                  "name": "Чапати с яйцом",
+                  "variant": "",
+                  "label": "",
+                  "price": 1500,
+                  "priceText": "1 500 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-2-3.jpg",
+                  "nameOriginal": "Чапати с яйцом",
+                  "categoryOriginal": "Основное меню / Fast food"
+                }
+              ]
+            },
+            {
+              "id": "i-0-2-4",
+              "title": "Кутабы",
+              "desc": "Слоёное тесто с начинкой из сыра с зеленью",
+              "descOriginal": [
+                "Тесто слоёное, начинка — сыр с зеленью"
+              ],
+              "photo": "images/item-0-2-4.jpg",
+              "options": [
+                {
+                  "key": "0-2-4",
+                  "name": "Кутабы",
+                  "variant": "",
+                  "label": "",
+                  "price": 1500,
+                  "priceText": "1 500 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-2-4.jpg",
+                  "nameOriginal": "Кутабы",
+                  "categoryOriginal": "Основное меню / Fast food"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "breakfast",
+          "label": "Завтраки",
+          "chip": "Завтраки",
+          "labelOriginal": [
+            "Завтраки"
+          ],
+          "layout": "cards",
+          "cards": [
+            {
+              "id": "i-0-3-4",
+              "title": "Деревенский завтрак",
+              "desc": "Натуральные колбаски, яйца-глазунья, крем-чиз, тостовый хлеб и корнишоны",
+              "descOriginal": [
+                "Натуральные колбаски, крем-чиз, яйца-глазунья, тостовый хлеб, корнишоны"
+              ],
+              "photo": "images/item-0-3-4.jpg",
+              "options": [
+                {
+                  "key": "0-3-4",
+                  "name": "Деревенский завтрак",
+                  "variant": "",
+                  "label": "",
+                  "price": 3500,
+                  "priceText": "3 500 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-3-4.jpg",
+                  "nameOriginal": "Деревенский завтрак",
+                  "categoryOriginal": "Основное меню / Завтраки"
+                }
+              ]
+            },
+            {
+              "id": "i-0-3-2",
+              "title": "Скрэмбл с хашбрауном",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "images/item-0-3-2.jpg",
+              "options": [
+                {
+                  "key": "0-3-2",
+                  "name": "Скрэмбл с хашбрауном",
+                  "variant": "",
+                  "label": "",
+                  "price": 3500,
+                  "priceText": "3 500 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-3-2.jpg",
+                  "nameOriginal": "Скрэмбл с хашбрауном",
+                  "categoryOriginal": "Основное меню / Завтраки"
+                }
+              ]
+            },
+            {
+              "id": "i-0-3-5",
+              "title": "Сэндвич с курицей",
+              "desc": "Хрустящее куриное филе в панировке, варёное яйцо и корнишоны в булочке бриошь",
+              "descOriginal": [
+                "Варёное яйцо и корнишоны, хрустящее куриное филе в панировке, булочка бриошь"
+              ],
+              "photo": "images/item-0-3-5.jpg",
+              "options": [
+                {
+                  "key": "0-3-5",
+                  "name": "Сэндвич с курицей",
+                  "variant": "",
+                  "label": "",
+                  "price": 2500,
+                  "priceText": "2 500 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-3-5.jpg",
+                  "nameOriginal": "Сэндвич с курицей",
+                  "categoryOriginal": "Основное меню / Завтраки"
+                }
+              ]
+            },
+            {
+              "id": "i-0-3-0",
+              "title": "Каша Тальбина",
+              "desc": "Ячменная каша с финиками и грецким орехом",
+              "descOriginal": [
+                "Ячменная каша с финиками и грецким орехом"
+              ],
+              "photo": "images/item-0-3-0.jpg",
+              "options": [
+                {
+                  "key": "0-3-0",
+                  "name": "Каша Тальбина",
+                  "variant": "",
+                  "label": "",
+                  "price": 1500,
+                  "priceText": "1 500 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-3-0.jpg",
+                  "nameOriginal": "Каша Тальбина",
+                  "categoryOriginal": "Основное меню / Завтраки"
+                }
+              ]
+            },
+            {
+              "id": "i-0-3-1",
+              "title": "Каша рисовая с запечённой тыквой",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "images/item-0-3-1.jpg",
+              "options": [
+                {
+                  "key": "0-3-1",
+                  "name": "Каша рисовая с запечённой тыквой",
+                  "variant": "",
+                  "label": "",
+                  "price": 1500,
+                  "priceText": "1 500 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-0-3-1.jpg",
+                  "nameOriginal": "Каша рисовая с запечённой тыквой",
+                  "categoryOriginal": "Основное меню / Завтраки"
+                }
+              ]
+            },
+            {
+              "id": "i-0-3-3",
+              "title": "Каша «Пять злаков»",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "0-3-3",
+                  "name": "Каша «Пять злаков»",
+                  "variant": "",
+                  "label": "",
+                  "price": 1500,
+                  "priceText": "1 500 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Каша «Пять злаков»",
+                  "categoryOriginal": "Основное меню / Завтраки"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "label": "Напитки",
+      "labelOriginal": [
+        "Барное меню Mandi",
+        "Барное меню Karak"
+      ],
+      "categories": [
+        {
+          "id": "karak",
+          "label": "Карак и магриби",
+          "chip": "Карак",
+          "labelOriginal": [
+            "Чаи (Барное меню Karak)"
+          ],
+          "layout": "cards",
+          "cards": [
+            {
+              "id": "karak-tea",
+              "title": "Фирменный карак чай",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "images/item-2-0-0.jpg",
+              "options": [
+                {
+                  "key": "2-0-4",
+                  "name": "Фирменный карак чай",
+                  "variant": "S",
+                  "label": "S",
+                  "price": 950,
+                  "priceText": "950 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Фирменный карак чай",
+                  "categoryOriginal": "Барное меню Karak / Чаи"
+                },
+                {
+                  "key": "2-0-3",
+                  "name": "Фирменный карак чай",
+                  "variant": "M",
+                  "label": "M",
+                  "price": 1250,
+                  "priceText": "1 250 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Фирменный карак чай",
+                  "categoryOriginal": "Барное меню Karak / Чаи"
+                },
+                {
+                  "key": "2-0-0",
+                  "name": "Фирменный карак чай",
+                  "variant": "на компанию",
+                  "label": "на компанию",
+                  "price": 3800,
+                  "priceText": "3 800 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-2-0-0.jpg",
+                  "nameOriginal": "Фирменный карак чай",
+                  "categoryOriginal": "Барное меню Karak / Чаи"
+                }
+              ],
+              "badge": "Рекомендуем"
+            },
+            {
+              "id": "maghribi",
+              "title": "Магриби",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "2-0-1",
+                  "name": "Магриби",
+                  "variant": "S",
+                  "label": "S",
+                  "price": 850,
+                  "priceText": "850 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Магриби",
+                  "categoryOriginal": "Барное меню Karak / Чаи"
+                },
+                {
+                  "key": "2-0-2",
+                  "name": "Магриби",
+                  "variant": "M",
+                  "label": "M",
+                  "price": 1050,
+                  "priceText": "1 050 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Магриби",
+                  "categoryOriginal": "Барное меню Karak / Чаи"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lemonades",
+          "label": "Лимонады и морсы",
+          "chip": "Лимонады",
+          "labelOriginal": [
+            "Фирменные лимонады",
+            "Не кофе"
+          ],
+          "layout": "cards",
+          "cover": "images/cover-bar-mandi-lemonades.jpg",
+          "cards": [
+            {
+              "id": "lem-strawberry",
+              "title": "Клубничный лимонад",
+              "desc": "Клубничное и грушевое пюре",
+              "descOriginal": [
+                "Клубничное и грушевое пюре"
+              ],
+              "photo": "images/item-1-4-0.jpg",
+              "options": [
+                {
+                  "key": "1-4-1",
+                  "name": "Клубничный лимонад",
+                  "variant": "0,5",
+                  "label": "0,5 л",
+                  "price": 1390,
+                  "priceText": "1 390 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Клубничный лимонад",
+                  "categoryOriginal": "Барное меню Mandi / Фирменные лимонады"
+                },
+                {
+                  "key": "1-4-0",
+                  "name": "Клубничный лимонад",
+                  "variant": "1 л",
+                  "label": "1 л",
+                  "price": 2790,
+                  "priceText": "2 790 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-4-0.jpg",
+                  "nameOriginal": "Клубничный лимонад",
+                  "categoryOriginal": "Барное меню Mandi / Фирменные лимонады"
+                }
+              ]
+            },
+            {
+              "id": "lem-berry",
+              "title": "Ягодный микс",
+              "desc": "Пюре клюквы и ежевики",
+              "descOriginal": [
+                "Пюре клюквы и ежевики"
+              ],
+              "photo": "images/item-1-4-2.jpg",
+              "options": [
+                {
+                  "key": "1-4-3",
+                  "name": "Ягодный микс",
+                  "variant": "0,5",
+                  "label": "0,5 л",
+                  "price": 1390,
+                  "priceText": "1 390 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Ягодный микс",
+                  "categoryOriginal": "Барное меню Mandi / Фирменные лимонады"
+                },
+                {
+                  "key": "1-4-2",
+                  "name": "Ягодный микс",
+                  "variant": "1 л",
+                  "label": "1 л",
+                  "price": 2790,
+                  "priceText": "2 790 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-4-2.jpg",
+                  "nameOriginal": "Ягодный микс",
+                  "categoryOriginal": "Барное меню Mandi / Фирменные лимонады"
+                }
+              ]
+            },
+            {
+              "id": "lem-pear",
+              "title": "Грушевый лимонад",
+              "desc": "Грушевое и манговое пюре",
+              "descOriginal": [
+                "Грушевое и манговое пюре"
+              ],
+              "photo": "images/item-1-4-4.jpg",
+              "options": [
+                {
+                  "key": "1-4-5",
+                  "name": "Грушевый лимонад",
+                  "variant": "0,5",
+                  "label": "0,5 л",
+                  "price": 1390,
+                  "priceText": "1 390 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Грушевый лимонад",
+                  "categoryOriginal": "Барное меню Mandi / Фирменные лимонады"
+                },
+                {
+                  "key": "1-4-4",
+                  "name": "Грушевый лимонад",
+                  "variant": "1 л",
+                  "label": "1 л",
+                  "price": 2790,
+                  "priceText": "2 790 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-4-4.jpg",
+                  "nameOriginal": "Грушевый лимонад",
+                  "categoryOriginal": "Барное меню Mandi / Фирменные лимонады"
+                }
+              ]
+            },
+            {
+              "id": "lem-citrus",
+              "title": "Цитрусовый лимонад",
+              "desc": "Апельсиновое пюре и свежие цитрусы",
+              "descOriginal": [
+                "Апельсиновое пюре и свежие цитрусы"
+              ],
+              "photo": "images/item-1-4-6.jpg",
+              "options": [
+                {
+                  "key": "1-4-7",
+                  "name": "Цитрусовый лимонад",
+                  "variant": "0,5",
+                  "label": "0,5 л",
+                  "price": 1390,
+                  "priceText": "1 390 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Цитрусовый лимонад",
+                  "categoryOriginal": "Барное меню Mandi / Фирменные лимонады"
+                },
+                {
+                  "key": "1-4-6",
+                  "name": "Цитрусовый лимонад",
+                  "variant": "1 л",
+                  "label": "1 л",
+                  "price": 2790,
+                  "priceText": "2 790 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-4-6.jpg",
+                  "nameOriginal": "Цитрусовый лимонад",
+                  "categoryOriginal": "Барное меню Mandi / Фирменные лимонады"
+                }
+              ]
+            },
+            {
+              "id": "lem-kiwi",
+              "title": "Лимонад киви-алоэ",
+              "desc": "Кислинка киви и лёгкая сладость алоэ",
+              "descOriginal": [
+                "Сладость и кислинка киви с лёгкой сладостью алоэ"
+              ],
+              "photo": "images/item-1-4-8.jpg",
+              "options": [
+                {
+                  "key": "1-4-8",
+                  "name": "Лимонад киви-алоэ",
+                  "variant": "0,5",
+                  "label": "0,5 л",
+                  "price": 1590,
+                  "priceText": "1 590 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-4-8.jpg",
+                  "nameOriginal": "Лимонад киви-алоэ",
+                  "categoryOriginal": "Барное меню Mandi / Фирменные лимонады"
+                },
+                {
+                  "key": "1-4-9",
+                  "name": "Лимонад киви-алоэ",
+                  "variant": "1 л",
+                  "label": "1 л",
+                  "price": 2990,
+                  "priceText": "2 990 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Лимонад киви-алоэ",
+                  "categoryOriginal": "Барное меню Mandi / Фирменные лимонады"
+                }
+              ]
+            },
+            {
+              "id": "lem-home",
+              "title": "Домашний лимонад",
+              "desc": "Натуральный, без газа",
+              "descOriginal": [],
+              "photo": "images/item-1-3-9.jpg",
+              "options": [
+                {
+                  "key": "1-3-9",
+                  "name": "Домашний лимонад",
+                  "variant": "0,3, натуральный без газа",
+                  "label": "0,3 л",
+                  "price": 700,
+                  "priceText": "700 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-3-9.jpg",
+                  "nameOriginal": "Домашний лимонад",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                },
+                {
+                  "key": "1-3-10",
+                  "name": "Домашний лимонад",
+                  "variant": "0,5, натуральный без газа",
+                  "label": "0,5 л",
+                  "price": 1200,
+                  "priceText": "1 200 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-3-10.jpg",
+                  "nameOriginal": "Домашний лимонад",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                },
+                {
+                  "key": "1-3-11",
+                  "name": "Домашний лимонад",
+                  "variant": "1 л, натуральный без газа",
+                  "label": "1 л",
+                  "price": 2400,
+                  "priceText": "2 400 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-3-11.jpg",
+                  "nameOriginal": "Домашний лимонад",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                }
+              ]
+            },
+            {
+              "id": "i-1-3-6",
+              "title": "Морс ягодный",
+              "desc": "Клюква и ежевика",
+              "descOriginal": [
+                "Микс ягод клюквы и ежевики"
+              ],
+              "photo": "images/item-1-3-6.jpg",
+              "options": [
+                {
+                  "key": "1-3-6",
+                  "name": "Морс ягодный",
+                  "variant": "1 л",
+                  "label": "1 л",
+                  "price": 1890,
+                  "priceText": "1 890 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-3-6.jpg",
+                  "nameOriginal": "Морс ягодный",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "author-tea",
+          "label": "Авторский чай",
+          "chip": "Авторский чай",
+          "labelOriginal": [
+            "Авторский чай",
+            "Авторский чай 0,3"
+          ],
+          "layout": "cards",
+          "cards": [
+            {
+              "id": "tea-sea-buckthorn",
+              "title": "Облепиховый чай",
+              "desc": "Облепиха, апельсин и цитрусовое пюре на чёрном чае",
+              "descOriginal": [
+                "Облепиха, апельсины, цитрусовое пюре, чёрный чай"
+              ],
+              "photo": "images/item-1-1-0.jpg",
+              "options": [
+                {
+                  "key": "1-1-0",
+                  "name": "Облепиховый чай",
+                  "variant": "",
+                  "label": "0,3 л",
+                  "price": 980,
+                  "priceText": "980 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-1-0.jpg",
+                  "nameOriginal": "Облепиховый чай 0,3",
+                  "categoryOriginal": "Барное меню Mandi / Авторский чай 0,3"
+                },
+                {
+                  "key": "1-0-0",
+                  "name": "Облепиховый чай",
+                  "variant": "",
+                  "label": "большой",
+                  "price": 2190,
+                  "priceText": "2 190 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-0-0.jpg",
+                  "nameOriginal": "Облепиховый чай",
+                  "categoryOriginal": "Барное меню Mandi / Авторский чай"
+                }
+              ]
+            },
+            {
+              "id": "i-1-0-1",
+              "title": "Вишнёвый чай с чабрецом",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "images/item-1-0-1.jpg",
+              "options": [
+                {
+                  "key": "1-0-1",
+                  "name": "Вишнёвый чай с чабрецом",
+                  "variant": "",
+                  "label": "большой",
+                  "price": 2190,
+                  "priceText": "2 190 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-0-1.jpg",
+                  "nameOriginal": "Вишнёвый чай с чабрецом",
+                  "categoryOriginal": "Барное меню Mandi / Авторский чай"
+                }
+              ]
+            },
+            {
+              "id": "i-1-0-2",
+              "title": "Суданский чай с барбарисом",
+              "desc": "Каркаде с ягодным пюре и барбарисом",
+              "descOriginal": [
+                "Каркаде, ягодное пюре, барбарис"
+              ],
+              "photo": "images/item-1-0-2.jpg",
+              "options": [
+                {
+                  "key": "1-0-2",
+                  "name": "Суданский чай с барбарисом",
+                  "variant": "",
+                  "label": "большой",
+                  "price": 2190,
+                  "priceText": "2 190 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-0-2.jpg",
+                  "nameOriginal": "Суданский чай с барбарисом",
+                  "categoryOriginal": "Барное меню Mandi / Авторский чай"
+                }
+              ]
+            },
+            {
+              "id": "i-1-0-3",
+              "title": "Цитрусовый чай с маракуйей",
+              "desc": "Зелёный чай сенча с цитрусовым пюре и маракуйей",
+              "descOriginal": [
+                "Цитрусовое пюре, маракуйя, зелёный чай сенча"
+              ],
+              "photo": "images/item-1-0-3.jpg",
+              "options": [
+                {
+                  "key": "1-0-3",
+                  "name": "Цитрусовый чай с маракуйей",
+                  "variant": "",
+                  "label": "большой",
+                  "price": 2190,
+                  "priceText": "2 190 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-0-3.jpg",
+                  "nameOriginal": "Цитрусовый чай с маракуйей",
+                  "categoryOriginal": "Барное меню Mandi / Авторский чай"
+                }
+              ]
+            },
+            {
+              "id": "i-1-0-4",
+              "title": "Марокканский чай",
+              "desc": "Зелёный чай сенча с соком лайма, мёдом и марокканскими специями",
+              "descOriginal": [
+                "Сок лайма, марокканские специи, мёд, зелёный чай сенча"
+              ],
+              "photo": "images/item-1-0-4.jpg",
+              "options": [
+                {
+                  "key": "1-0-4",
+                  "name": "Марокканский чай",
+                  "variant": "",
+                  "label": "большой",
+                  "price": 2190,
+                  "priceText": "2 190 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-0-4.jpg",
+                  "nameOriginal": "Марокканский чай",
+                  "categoryOriginal": "Барное меню Mandi / Авторский чай"
+                }
+              ]
+            },
+            {
+              "id": "i-1-0-5",
+              "title": "Клюквенный чай с имбирём",
+              "desc": "Чёрный чай с клюквенным пюре, имбирём и лимоном",
+              "descOriginal": [
+                "Клюквенное пюре, имбирь, лимон, чёрный чай"
+              ],
+              "photo": "images/item-1-0-5.jpg",
+              "options": [
+                {
+                  "key": "1-0-5",
+                  "name": "Клюквенный чай с имбирём",
+                  "variant": "",
+                  "label": "большой",
+                  "price": 2190,
+                  "priceText": "2 190 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-0-5.jpg",
+                  "nameOriginal": "Клюквенный чай с имбирём",
+                  "categoryOriginal": "Барное меню Mandi / Авторский чай"
+                }
+              ]
+            },
+            {
+              "id": "i-1-1-1",
+              "title": "Малина-манго",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "images/item-1-1-1.jpg",
+              "options": [
+                {
+                  "key": "1-1-1",
+                  "name": "Малина-манго",
+                  "variant": "",
+                  "label": "0,3 л",
+                  "price": 980,
+                  "priceText": "980 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-1-1.jpg",
+                  "nameOriginal": "Малина-манго 0,3",
+                  "categoryOriginal": "Барное меню Mandi / Авторский чай 0,3"
+                }
+              ]
+            },
+            {
+              "id": "i-1-1-2",
+              "title": "Черника-имбирь",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "images/item-1-1-2.jpg",
+              "options": [
+                {
+                  "key": "1-1-2",
+                  "name": "Черника-имбирь",
+                  "variant": "",
+                  "label": "0,3 л",
+                  "price": 980,
+                  "priceText": "980 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-1-2.jpg",
+                  "nameOriginal": "Черника-имбирь",
+                  "categoryOriginal": "Барное меню Mandi / Авторский чай 0,3"
+                }
+              ]
+            },
+            {
+              "id": "i-1-1-3",
+              "title": "Ежевика-гвоздика",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "images/item-1-1-3.jpg",
+              "options": [
+                {
+                  "key": "1-1-3",
+                  "name": "Ежевика-гвоздика",
+                  "variant": "",
+                  "label": "0,3 л",
+                  "price": 980,
+                  "priceText": "980 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-1-3.jpg",
+                  "nameOriginal": "Ежевика-гвоздика",
+                  "categoryOriginal": "Барное меню Mandi / Авторский чай 0,3"
+                }
+              ]
+            },
+            {
+              "id": "i-1-1-4",
+              "title": "Груша-чабрец",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "images/item-1-1-4.jpg",
+              "options": [
+                {
+                  "key": "1-1-4",
+                  "name": "Груша-чабрец",
+                  "variant": "",
+                  "label": "0,3 л",
+                  "price": 980,
+                  "priceText": "980 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-1-4.jpg",
+                  "nameOriginal": "Груша-чабрец",
+                  "categoryOriginal": "Барное меню Mandi / Авторский чай 0,3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "coffee",
+          "label": "Кофе",
+          "chip": "Кофе",
+          "labelOriginal": [
+            "Кофейная классика"
+          ],
+          "layout": "cards",
+          "cards": [
+            {
+              "id": "i-1-2-0",
+              "title": "Эспрессо",
+              "desc": "Крепкий, с балансом горечи и кислотности",
+              "descOriginal": [
+                "Крепкий кофейный напиток с балансом горечи и кислотности"
+              ],
+              "photo": "images/item-1-2-0.jpg",
+              "options": [
+                {
+                  "key": "1-2-0",
+                  "name": "Эспрессо",
+                  "variant": "",
+                  "label": "",
+                  "price": 590,
+                  "priceText": "590 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-2-0.jpg",
+                  "nameOriginal": "Эспрессо",
+                  "categoryOriginal": "Барное меню Mandi / Кофейная классика"
+                }
+              ]
+            },
+            {
+              "id": "americano",
+              "title": "Американо",
+              "desc": "Двойной эспрессо с горячей водой",
+              "descOriginal": [
+                "Двойной эспрессо с горячей водой"
+              ],
+              "photo": "images/item-1-2-3.jpg",
+              "options": [
+                {
+                  "key": "1-2-3",
+                  "name": "Американо",
+                  "variant": "S",
+                  "label": "S",
+                  "price": 890,
+                  "priceText": "890 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-2-3.jpg",
+                  "nameOriginal": "Американо",
+                  "categoryOriginal": "Барное меню Mandi / Кофейная классика"
+                },
+                {
+                  "key": "1-2-4",
+                  "name": "Американо",
+                  "variant": "M",
+                  "label": "M",
+                  "price": 990,
+                  "priceText": "990 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-2-4.jpg",
+                  "nameOriginal": "Американо",
+                  "categoryOriginal": "Барное меню Mandi / Кофейная классика"
+                }
+              ]
+            },
+            {
+              "id": "cappuccino",
+              "title": "Капучино",
+              "desc": "Эспрессо с плотной молочной пеной",
+              "descOriginal": [
+                "На основе эспрессо, с плотной молочной пеной"
+              ],
+              "photo": "images/item-1-2-1.jpg",
+              "options": [
+                {
+                  "key": "1-2-1",
+                  "name": "Капучино",
+                  "variant": "S",
+                  "label": "S",
+                  "price": 980,
+                  "priceText": "980 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-2-1.jpg",
+                  "nameOriginal": "Капучино",
+                  "categoryOriginal": "Барное меню Mandi / Кофейная классика"
+                },
+                {
+                  "key": "1-2-2",
+                  "name": "Капучино",
+                  "variant": "M",
+                  "label": "M",
+                  "price": 1290,
+                  "priceText": "1 290 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-2-2.jpg",
+                  "nameOriginal": "Капучино",
+                  "categoryOriginal": "Барное меню Mandi / Кофейная классика"
+                }
+              ]
+            },
+            {
+              "id": "i-1-2-5",
+              "title": "Латте",
+              "desc": "Эспрессо и подогретое молоко",
+              "descOriginal": [
+                "Эспрессо и подогретое молоко"
+              ],
+              "photo": "images/item-1-2-5.jpg",
+              "options": [
+                {
+                  "key": "1-2-5",
+                  "name": "Латте",
+                  "variant": "M",
+                  "label": "M",
+                  "price": 1290,
+                  "priceText": "1 290 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-2-5.jpg",
+                  "nameOriginal": "Латте",
+                  "categoryOriginal": "Барное меню Mandi / Кофейная классика"
+                }
+              ]
+            },
+            {
+              "id": "i-1-2-6",
+              "title": "Флэт уайт",
+              "desc": "Двойной эспрессо и подогретое молоко",
+              "descOriginal": [
+                "Двойной эспрессо и подогретое молоко"
+              ],
+              "photo": "images/item-1-2-6.jpg",
+              "options": [
+                {
+                  "key": "1-2-6",
+                  "name": "Флэт уайт",
+                  "variant": "",
+                  "label": "",
+                  "price": 1390,
+                  "priceText": "1 390 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-2-6.jpg",
+                  "nameOriginal": "Флэт Уайт",
+                  "categoryOriginal": "Барное меню Mandi / Кофейная классика"
+                }
+              ]
+            },
+            {
+              "id": "i-1-2-7",
+              "title": "Раф кофе",
+              "desc": "Эспрессо со сливками 10 % жирности",
+              "descOriginal": [
+                "Эспрессо и сливки 10% жирности"
+              ],
+              "photo": "images/item-1-2-7.jpg",
+              "options": [
+                {
+                  "key": "1-2-7",
+                  "name": "Раф кофе",
+                  "variant": "",
+                  "label": "",
+                  "price": 1690,
+                  "priceText": "1 690 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-2-7.jpg",
+                  "nameOriginal": "Раф кофе",
+                  "categoryOriginal": "Барное меню Mandi / Кофейная классика"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iced-coffee",
+          "label": "Холодный кофе",
+          "chip": "Холодный кофе",
+          "labelOriginal": [
+            "Ice coffee"
+          ],
+          "layout": "cards",
+          "cards": [
+            {
+              "id": "i-1-7-0",
+              "title": "Айс латте",
+              "desc": "Эспрессо и молоко",
+              "descOriginal": [
+                "Эспрессо и молоко"
+              ],
+              "photo": "images/item-1-7-0.jpg",
+              "options": [
+                {
+                  "key": "1-7-0",
+                  "name": "Айс латте",
+                  "variant": "0,3",
+                  "label": "0,3 л",
+                  "price": 1490,
+                  "priceText": "1 490 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-7-0.jpg",
+                  "nameOriginal": "Айс латте",
+                  "categoryOriginal": "Барное меню Mandi / Ice coffee"
+                }
+              ]
+            },
+            {
+              "id": "i-1-7-1",
+              "title": "Айс капучино",
+              "desc": "Двойной эспрессо и молоко",
+              "descOriginal": [
+                "Двойной эспрессо и молоко"
+              ],
+              "photo": "images/item-1-7-1.jpg",
+              "options": [
+                {
+                  "key": "1-7-1",
+                  "name": "Айс капучино",
+                  "variant": "0,3",
+                  "label": "0,3 л",
+                  "price": 1490,
+                  "priceText": "1 490 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-7-1.jpg",
+                  "nameOriginal": "Айс капучино",
+                  "categoryOriginal": "Барное меню Mandi / Ice coffee"
+                }
+              ]
+            },
+            {
+              "id": "i-1-7-2",
+              "title": "Бамбл кофе",
+              "desc": "Двойной эспрессо и апельсиновый фреш",
+              "descOriginal": [
+                "Апельсиновый фреш и двойной эспрессо"
+              ],
+              "photo": "images/item-1-7-2.jpg",
+              "options": [
+                {
+                  "key": "1-7-2",
+                  "name": "Бамбл кофе",
+                  "variant": "0,3",
+                  "label": "0,3 л",
+                  "price": 2700,
+                  "priceText": "2 700 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-7-2.jpg",
+                  "nameOriginal": "Бамбл кофе",
+                  "categoryOriginal": "Барное меню Mandi / Ice coffee"
+                }
+              ]
+            },
+            {
+              "id": "i-1-7-3",
+              "title": "Колд макадамия",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "images/item-1-7-3.jpg",
+              "options": [
+                {
+                  "key": "1-7-3",
+                  "name": "Колд макадамия",
+                  "variant": "0,3",
+                  "label": "0,3 л",
+                  "price": 1590,
+                  "priceText": "1 590 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-7-3.jpg",
+                  "nameOriginal": "Колд макадамия",
+                  "categoryOriginal": "Барное меню Mandi / Ice coffee"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "not-coffee",
+          "label": "Не кофе",
+          "chip": "Не кофе",
+          "labelOriginal": [
+            "Не кофе"
+          ],
+          "layout": "cards",
+          "cards": [
+            {
+              "id": "i-1-3-0",
+              "title": "Айс матча манго",
+              "desc": "Молочный напиток с зелёной матчей и манговым пюре",
+              "descOriginal": [
+                "Молочный напиток на манговом пюре и зелёной матче"
+              ],
+              "photo": "images/item-1-3-0.jpg",
+              "options": [
+                {
+                  "key": "1-3-0",
+                  "name": "Айс матча манго",
+                  "variant": "0,4",
+                  "label": "0,4 л",
+                  "price": 1690,
+                  "priceText": "1 690 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-3-0.jpg",
+                  "nameOriginal": "Айс матча манго",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                }
+              ]
+            },
+            {
+              "id": "i-1-3-4",
+              "title": "Айс блю матча карамель",
+              "desc": "Голубая матча с карамелью",
+              "descOriginal": [
+                "Голубая матча с карамелью"
+              ],
+              "photo": "images/item-1-3-4.jpg",
+              "options": [
+                {
+                  "key": "1-3-4",
+                  "name": "Айс блю матча карамель",
+                  "variant": "0,4",
+                  "label": "0,4 л",
+                  "price": 1690,
+                  "priceText": "1 690 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-3-4.jpg",
+                  "nameOriginal": "Ice blue матча карамель",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                }
+              ]
+            },
+            {
+              "id": "i-1-3-2",
+              "title": "Тайский айс-ти",
+              "desc": "Тайский чай анчан с апельсиновым пюре",
+              "descOriginal": [
+                "Тайский чай Анчан и апельсиновое пюре"
+              ],
+              "photo": "images/item-1-3-2.jpg",
+              "options": [
+                {
+                  "key": "1-3-2",
+                  "name": "Тайский айс-ти",
+                  "variant": "0,4",
+                  "label": "0,4 л",
+                  "price": 1390,
+                  "priceText": "1 390 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-3-2.jpg",
+                  "nameOriginal": "Тайский ice tea",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                }
+              ]
+            },
+            {
+              "id": "i-1-3-3",
+              "title": "Цитрусовый айс-ти",
+              "desc": "Чай эрл грей с цитрусовым пюре",
+              "descOriginal": [
+                "Цитрусовое пюре и чай эрл грей"
+              ],
+              "photo": "images/item-1-3-3.jpg",
+              "options": [
+                {
+                  "key": "1-3-3",
+                  "name": "Цитрусовый айс-ти",
+                  "variant": "0,4",
+                  "label": "0,4 л",
+                  "price": 1190,
+                  "priceText": "1 190 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-3-3.jpg",
+                  "nameOriginal": "Цитрусовый ice tea",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                }
+              ]
+            },
+            {
+              "id": "i-1-3-5",
+              "title": "Айс-ти жасмин-клубника",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "images/item-1-3-5.jpg",
+              "options": [
+                {
+                  "key": "1-3-5",
+                  "name": "Айс-ти жасмин-клубника",
+                  "variant": "0,4",
+                  "label": "0,4 л",
+                  "price": 1190,
+                  "priceText": "1 190 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-3-5.jpg",
+                  "nameOriginal": "Ice tea жасмин-клубника",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                }
+              ]
+            },
+            {
+              "id": "i-1-3-8",
+              "title": "Ежевичный айс-ти",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-3-8",
+                  "name": "Ежевичный айс-ти",
+                  "variant": "0,4",
+                  "label": "0,4 л",
+                  "price": 1290,
+                  "priceText": "1 290 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Ежевичный ice tea",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                }
+              ]
+            },
+            {
+              "id": "i-1-3-1",
+              "title": "Апельсиновый фреш",
+              "desc": "Свежевыжатый апельсиновый сок",
+              "descOriginal": [
+                "Свежевыжатый апельсиновый сок"
+              ],
+              "photo": "images/item-1-3-1.jpg",
+              "options": [
+                {
+                  "key": "1-3-1",
+                  "name": "Апельсиновый фреш",
+                  "variant": "0,25",
+                  "label": "0,25 л",
+                  "price": 2100,
+                  "priceText": "2 100 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-3-1.jpg",
+                  "nameOriginal": "Апельсиновый фреш",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                }
+              ]
+            },
+            {
+              "id": "i-1-3-7",
+              "title": "Какао",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-3-7",
+                  "name": "Какао",
+                  "variant": "",
+                  "label": "",
+                  "price": 900,
+                  "priceText": "900 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Какао",
+                  "categoryOriginal": "Барное меню Mandi / Не кофе"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smoothies",
+          "label": "Смузи и милкшейки",
+          "chip": "Смузи",
+          "labelOriginal": [
+            "Смузи / милкшейки"
+          ],
+          "layout": "cards",
+          "cards": [
+            {
+              "id": "i-1-6-0",
+              "title": "Черничный смузи",
+              "desc": "Черника, банан и черничное пюре",
+              "descOriginal": [
+                "Ягоды черники, банан и черничное пюре"
+              ],
+              "photo": "images/item-1-6-0.jpg",
+              "options": [
+                {
+                  "key": "1-6-0",
+                  "name": "Черничный смузи",
+                  "variant": "0,4",
+                  "label": "0,4 л",
+                  "price": 1990,
+                  "priceText": "1 990 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-6-0.jpg",
+                  "nameOriginal": "Черничный смузи",
+                  "categoryOriginal": "Барное меню Mandi / Смузи / милкшейки"
+                }
+              ]
+            },
+            {
+              "id": "i-1-6-1",
+              "title": "Ягодный смузи",
+              "desc": "Ягоды и ягодное пюре",
+              "descOriginal": [
+                "Ягодное пюре и ягоды"
+              ],
+              "photo": "images/item-1-6-1.jpg",
+              "options": [
+                {
+                  "key": "1-6-1",
+                  "name": "Ягодный смузи",
+                  "variant": "0,4",
+                  "label": "0,4 л",
+                  "price": 1990,
+                  "priceText": "1 990 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-6-1.jpg",
+                  "nameOriginal": "Ягодный смузи",
+                  "categoryOriginal": "Барное меню Mandi / Смузи / милкшейки"
+                }
+              ]
+            },
+            {
+              "id": "i-1-6-4",
+              "title": "Смузи киви-финики",
+              "desc": "Свежие финики и киви",
+              "descOriginal": [
+                "Свежие финики и киви"
+              ],
+              "photo": "images/item-1-6-4.jpg",
+              "options": [
+                {
+                  "key": "1-6-4",
+                  "name": "Смузи киви-финики",
+                  "variant": "0,3",
+                  "label": "0,3 л",
+                  "price": 1990,
+                  "priceText": "1 990 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-6-4.jpg",
+                  "nameOriginal": "Смузи киви-финики",
+                  "categoryOriginal": "Барное меню Mandi / Смузи / милкшейки"
+                }
+              ]
+            },
+            {
+              "id": "i-1-6-2",
+              "title": "Ванильный милкшейк",
+              "desc": "Сливочное мороженое, молоко и взбитые сливки",
+              "descOriginal": [
+                "Сливочное мороженое, молоко, взбитые сливки"
+              ],
+              "photo": "images/item-1-6-2.jpg",
+              "options": [
+                {
+                  "key": "1-6-2",
+                  "name": "Ванильный милкшейк",
+                  "variant": "0,3",
+                  "label": "0,3 л",
+                  "price": 1590,
+                  "priceText": "1 590 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-6-2.jpg",
+                  "nameOriginal": "Ванильный милкшейк",
+                  "categoryOriginal": "Барное меню Mandi / Смузи / милкшейки"
+                }
+              ]
+            },
+            {
+              "id": "i-1-6-3",
+              "title": "Клубничный милкшейк",
+              "desc": "Клубничное мороженое, молоко и взбитые сливки",
+              "descOriginal": [
+                "Клубничное мороженое, молоко, взбитые сливки"
+              ],
+              "photo": "images/item-1-6-3.jpg",
+              "options": [
+                {
+                  "key": "1-6-3",
+                  "name": "Клубничный милкшейк",
+                  "variant": "0,3",
+                  "label": "0,3 л",
+                  "price": 1590,
+                  "priceText": "1 590 ₸",
+                  "outOfStock": false,
+                  "photo": "images/item-1-6-3.jpg",
+                  "nameOriginal": "Клубничный милкшейк",
+                  "categoryOriginal": "Барное меню Mandi / Смузи / милкшейки"
+                }
+              ]
+            },
+            {
+              "id": "i-1-6-5",
+              "title": "Финиковый милкшейк",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-6-5",
+                  "name": "Финиковый милкшейк",
+                  "variant": "",
+                  "label": "",
+                  "price": 1900,
+                  "priceText": "1 900 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Финиковый милкшейк",
+                  "categoryOriginal": "Барное меню Mandi / Смузи / милкшейки"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "leaf-tea",
+          "label": "Листовой чай",
+          "chip": "Листовой чай",
+          "labelOriginal": [
+            "Листовой чай"
+          ],
+          "layout": "list",
+          "cards": [
+            {
+              "id": "i-1-5-3",
+              "title": "Ассам",
+              "desc": "Классический чёрный чай",
+              "descOriginal": [
+                "Классический чёрный чай"
+              ],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-5-3",
+                  "name": "Ассам",
+                  "variant": "",
+                  "label": "",
+                  "price": 1200,
+                  "priceText": "1 200 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Ассам",
+                  "categoryOriginal": "Барное меню Mandi / Листовой чай"
+                }
+              ]
+            },
+            {
+              "id": "i-1-5-2",
+              "title": "Эрл грей",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-5-2",
+                  "name": "Эрл грей",
+                  "variant": "",
+                  "label": "",
+                  "price": 1500,
+                  "priceText": "1 500 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Эрл грей",
+                  "categoryOriginal": "Барное меню Mandi / Листовой чай"
+                }
+              ]
+            },
+            {
+              "id": "i-1-5-0",
+              "title": "Молочный улун",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-5-0",
+                  "name": "Молочный улун",
+                  "variant": "",
+                  "label": "",
+                  "price": 1500,
+                  "priceText": "1 500 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Молочный улун",
+                  "categoryOriginal": "Барное меню Mandi / Листовой чай"
+                }
+              ]
+            },
+            {
+              "id": "i-1-5-1",
+              "title": "Те гуань инь",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-5-1",
+                  "name": "Те гуань инь",
+                  "variant": "",
+                  "label": "",
+                  "price": 1500,
+                  "priceText": "1 500 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Те гуань инь",
+                  "categoryOriginal": "Барное меню Mandi / Листовой чай"
+                }
+              ]
+            },
+            {
+              "id": "i-1-5-4",
+              "title": "Тары чай",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-5-4",
+                  "name": "Тары чай",
+                  "variant": "",
+                  "label": "",
+                  "price": 2400,
+                  "priceText": "2 400 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Тары чай",
+                  "categoryOriginal": "Барное меню Mandi / Листовой чай"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "soda",
+          "label": "Газированные напитки",
+          "chip": "Газировки",
+          "labelOriginal": [
+            "Освежающие напитки",
+            "Тоник"
+          ],
+          "layout": "list",
+          "cards": [
+            {
+              "id": "i-1-8-0",
+              "title": "Мекка cola",
+              "desc": "Арабская классика — глубокий вкус традиционной колы",
+              "descOriginal": [
+                "Арабская классика — глубокий вкус традиционной колы"
+              ],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-8-0",
+                  "name": "Мекка cola",
+                  "variant": "",
+                  "label": "",
+                  "price": 1050,
+                  "priceText": "1 050 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Мекка cola",
+                  "categoryOriginal": "Барное меню Mandi / Освежающие напитки"
+                }
+              ]
+            },
+            {
+              "id": "i-1-8-1",
+              "title": "Milaf cola",
+              "desc": "Кола на основе фиников, с карамельными нотками",
+              "descOriginal": [
+                "На основе фиников — насыщенный вкус с карамельными нотками"
+              ],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-8-1",
+                  "name": "Milaf cola",
+                  "variant": "",
+                  "label": "",
+                  "price": 1050,
+                  "priceText": "1 050 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Milaf cola",
+                  "categoryOriginal": "Барное меню Mandi / Освежающие напитки"
+                }
+              ]
+            },
+            {
+              "id": "i-1-8-2",
+              "title": "Kinza в ассортименте",
+              "desc": "Лимонно-лаймовый арабский напиток",
+              "descOriginal": [
+                "Лимонно-лаймовый арабский напиток"
+              ],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-8-2",
+                  "name": "Kinza в ассортименте",
+                  "variant": "",
+                  "label": "",
+                  "price": 1050,
+                  "priceText": "1 050 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Kinza в ассортименте",
+                  "categoryOriginal": "Барное меню Mandi / Освежающие напитки"
+                }
+              ]
+            },
+            {
+              "id": "i-1-9-4",
+              "title": "Швепс",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-9-4",
+                  "name": "Швепс",
+                  "variant": "",
+                  "label": "",
+                  "price": 1200,
+                  "priceText": "1 200 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Швепс",
+                  "categoryOriginal": "Барное меню Mandi / Тоник"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tonic",
+          "label": "Тоники",
+          "chip": "Тоники",
+          "labelOriginal": [
+            "Тоник"
+          ],
+          "layout": "list",
+          "cards": [
+            {
+              "id": "i-1-9-0",
+              "title": "Малиновый тоник",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-9-0",
+                  "name": "Малиновый тоник",
+                  "variant": "",
+                  "label": "",
+                  "price": 2280,
+                  "priceText": "2 280 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Малиновый тоник",
+                  "categoryOriginal": "Барное меню Mandi / Тоник"
+                }
+              ]
+            },
+            {
+              "id": "i-1-9-1",
+              "title": "Цитрусовый тоник",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-9-1",
+                  "name": "Цитрусовый тоник",
+                  "variant": "",
+                  "label": "",
+                  "price": 2280,
+                  "priceText": "2 280 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Цитрусовый тоник",
+                  "categoryOriginal": "Барное меню Mandi / Тоник"
+                }
+              ]
+            },
+            {
+              "id": "i-1-9-2",
+              "title": "Ягодный тоник",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-9-2",
+                  "name": "Ягодный тоник",
+                  "variant": "",
+                  "label": "",
+                  "price": 2280,
+                  "priceText": "2 280 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Ягодный тоник",
+                  "categoryOriginal": "Барное меню Mandi / Тоник"
+                }
+              ]
+            },
+            {
+              "id": "i-1-9-3",
+              "title": "Батч-брю тоник",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "1-9-3",
+                  "name": "Батч-брю тоник",
+                  "variant": "",
+                  "label": "",
+                  "price": 2280,
+                  "priceText": "2 280 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Батч-брю тоник",
+                  "categoryOriginal": "Барное меню Mandi / Тоник"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "label": "Десерты",
+      "labelOriginal": [
+        "Десерты"
+      ],
+      "categories": [
+        {
+          "id": "showcase",
+          "label": "Десерты с витрины",
+          "chip": "Десерты с витрины",
+          "labelOriginal": [
+            "Десерты с витрины"
+          ],
+          "layout": "list",
+          "lead": "Сладкое к караку и чаю",
+          "cards": [
+            {
+              "id": "i-3-0-2",
+              "title": "Фисташковый рулет",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "3-0-2",
+                  "name": "Фисташковый рулет",
+                  "variant": "",
+                  "label": "",
+                  "price": 2500,
+                  "priceText": "2 500 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Фисташковый рулет",
+                  "categoryOriginal": "Десерты / Десерты с витрины"
+                }
+              ]
+            },
+            {
+              "id": "i-3-0-1",
+              "title": "Чизкейк испанский",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "3-0-1",
+                  "name": "Чизкейк испанский",
+                  "variant": "",
+                  "label": "",
+                  "price": 2000,
+                  "priceText": "2 000 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Чизкейк испанский",
+                  "categoryOriginal": "Десерты / Десерты с витрины"
+                }
+              ]
+            },
+            {
+              "id": "i-3-0-3",
+              "title": "Чизкейк тары",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "3-0-3",
+                  "name": "Чизкейк тары",
+                  "variant": "",
+                  "label": "",
+                  "price": 2000,
+                  "priceText": "2 000 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Чизкейк тары",
+                  "categoryOriginal": "Десерты / Десерты с витрины"
+                }
+              ]
+            },
+            {
+              "id": "i-3-0-4",
+              "title": "Наполеон",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "3-0-4",
+                  "name": "Наполеон",
+                  "variant": "",
+                  "label": "",
+                  "price": 2200,
+                  "priceText": "2 200 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Наполеон",
+                  "categoryOriginal": "Десерты / Десерты с витрины"
+                }
+              ]
+            },
+            {
+              "id": "i-3-0-5",
+              "title": "Медовик",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "3-0-5",
+                  "name": "Медовик",
+                  "variant": "",
+                  "label": "",
+                  "price": 1900,
+                  "priceText": "1 900 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Медовик",
+                  "categoryOriginal": "Десерты / Десерты с витрины"
+                }
+              ]
+            },
+            {
+              "id": "i-3-0-8",
+              "title": "Чайное ассорти из орехов и сухофруктов",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "3-0-8",
+                  "name": "Чайное ассорти из орехов и сухофруктов",
+                  "variant": "",
+                  "label": "",
+                  "price": 3000,
+                  "priceText": "3 000 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Чайное ассорти из орехов и сухофруктов",
+                  "categoryOriginal": "Десерты / Десерты с витрины"
+                }
+              ]
+            },
+            {
+              "id": "i-3-0-0",
+              "title": "Финики в шоколаде",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "3-0-0",
+                  "name": "Финики в шоколаде",
+                  "variant": "",
+                  "label": "",
+                  "price": 800,
+                  "priceText": "800 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Финики в шоколаде",
+                  "categoryOriginal": "Десерты / Десерты с витрины"
+                }
+              ]
+            },
+            {
+              "id": "i-3-0-6",
+              "title": "Орешек со сгущёнкой",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "3-0-6",
+                  "name": "Орешек со сгущёнкой",
+                  "variant": "",
+                  "label": "",
+                  "price": 350,
+                  "priceText": "350 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Орешек со сгущёнкой",
+                  "categoryOriginal": "Десерты / Десерты с витрины"
+                }
+              ]
+            },
+            {
+              "id": "i-3-0-9",
+              "title": "Жент",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "3-0-9",
+                  "name": "Жент",
+                  "variant": "",
+                  "label": "",
+                  "price": 350,
+                  "priceText": "350 ₸",
+                  "outOfStock": false,
+                  "photo": "",
+                  "nameOriginal": "Жент",
+                  "categoryOriginal": "Десерты / Десерты с витрины"
+                }
+              ]
+            },
+            {
+              "id": "i-3-0-7",
+              "title": "Вафельная трубочка с варёной сгущёнкой",
+              "desc": "",
+              "descOriginal": [],
+              "photo": "",
+              "options": [
+                {
+                  "key": "3-0-7",
+                  "name": "Вафельная трубочка с варёной сгущёнкой",
+                  "variant": "",
+                  "label": "",
+                  "price": null,
+                  "priceText": null,
+                  "outOfStock": true,
+                  "photo": "",
+                  "nameOriginal": "Вафельная трубочка с варёной сгущёнкой",
+                  "categoryOriginal": "Десерты / Десерты с витрины"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
