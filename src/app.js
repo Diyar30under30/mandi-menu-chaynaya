@@ -236,8 +236,20 @@
     if (!c) return;
     showSection(c.getAttribute("data-sec"));
     markChip(c.id);
+    keepPlace(c.id);
   }
   window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(spy); } }, { passive: true });
+
+  /* Переключатель языка открывает вторую версию на той же категории */
+  var otherLang = $('.lang__btn:not([aria-current="true"])');
+  var otherBase = otherLang ? otherLang.getAttribute("href").split("#")[0] : "";
+  function keepPlace(id) {
+    if (otherLang) otherLang.setAttribute("href", otherBase + (window.scrollY > 200 ? "#" + id : ""));
+  }
+  if (location.hash && document.getElementById(location.hash.slice(1))) {
+    setNavH();
+    document.getElementById(location.hash.slice(1)).scrollIntoView({ block: "start" });
+  }
 
   /* ───────── Поиск ───────── */
   var searchBtn = $("#search-btn"), search = $("#search"), q = $("#q"), qResult = $("#q-result");
