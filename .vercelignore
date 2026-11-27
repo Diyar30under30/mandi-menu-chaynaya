@@ -1,0 +1,5 @@
+.impeccable/
+.gstack/
+_shots/
+node_modules/
+.vercel/
