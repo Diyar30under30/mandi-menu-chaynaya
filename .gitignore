@@ -7,3 +7,5 @@ _shots/
 .impeccable/audit/
 .impeccable/hook.cache.json
 .gstack/
+
+.vercel
