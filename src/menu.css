@@ -133,6 +133,14 @@ main { padding-bottom: var(--space-12); }
   .about__links { grid-column: 2; grid-row: 1 / span 5; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; margin-top: 0; }
 }
 
+/* ───────── Узкий телефон: подпись «На сколько персон?» в одну строку ───────── */
+@media (max-width: 430px) {
+  .seg { padding-left: var(--space-3); flex-wrap: wrap; row-gap: var(--space-2); }
+  .seg__label { font-size: var(--text-base); }
+  .seg__opts { gap: var(--space-1); }
+  .seg__opt { width: var(--tap-min); }
+}
+
 /* ───────── Телефон: вырезы экрана и альбомная ориентация ───────── */
 @supports (padding: max(1px)) {
   .container { padding-left: max(var(--grid-margin), env(safe-area-inset-left)); padding-right: max(var(--grid-margin), env(safe-area-inset-right)); }
