@@ -65,7 +65,8 @@ main { padding-bottom: var(--space-12); }
 .mandi .seg { margin-top: var(--space-4); }
 .mandi .story { margin-top: var(--space-2); }
 .mandi .story p { margin-top: var(--space-1); }
-.dishes { display: grid; }
+.dishes { display: grid; align-content: start; }
+.dishes > .items { align-content: start; }
 .cat--mandi + .cats, .cat--feature + .cats { margin-top: var(--space-16); }
 .mandi__photo img { object-position: 50% 40%; }
 .mandi__photo--pour img { object-position: 50% 35%; }
